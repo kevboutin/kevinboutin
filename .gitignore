@@ -1,6 +1,5 @@
 # Build Directories #
 #####################
-build/
 publish/
 intermediate/
 dist/
