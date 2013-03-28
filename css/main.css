@@ -16,9 +16,9 @@ body {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
+	background: #b3d4fc;
   text-shadow: none;
-}
+	}
 
 ::selection {
   background: #b3d4fc;
@@ -112,8 +112,7 @@ nav a:hover {
   font-size: 2em;
 }
 
-.footer-container footer {
-  color: white;
+#footer-container footer {
   padding: 20px 0;
 }
 
@@ -131,18 +130,16 @@ nav a:hover {
 body {
   background: url('../img/noise.png');
 }
-#header-container {
+#header-container,
+#footer-container {
   position: fixed;
   background: transparent;
-  color: #fff;
   width: 100%;
+  color: #fff;
 }
-.footer-container {
-  position: fixed;
-  background: transparent;
+#footer-container {
   bottom: 0;
   right: 0;
-  width: 100%;
 }
 article {
   background: url('../img/noise.png') #ccc;
@@ -286,6 +283,10 @@ footer li a {
   text-decoration: none;
   margin-bottom: 0;
 }
+nav li a:visited,
+footer li a:visited {
+  color: #ccc;
+}  
 nav li a:focus,
 nav li a:hover,
 footer li a:focus,
@@ -392,75 +393,6 @@ footer li.is-active a {
     left: 70%;
   }
 
-  .csstransforms3d.csstransitions.js-ready #nav {
-    left: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .csstransforms3d.csstransitions.js-ready #inner-wrap {
-    left: 0 !important;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
-    transition: transform 500ms ease;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .csstransforms3d.csstransitions.js-nav #inner-wrap {
-    -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -moz-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -ms-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -o-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-  }
-
-  .csstransforms3d.csstransitions.js-ready #nav .block {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    opacity: 0.7;
-    -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
-    -webkit-transition-delay: ease, 0s;
-    -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
-    -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
-    transition: opacity 300ms 100ms ease, transform 500ms ease;
-    -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -moz-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -ms-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -o-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    -ms-transform-origin: 50% 0%;
-    -o-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-
-  .csstransforms3d.csstransitions.js-nav #nav .block {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
 
 @media only screen and (min-width: 480px) {
 
@@ -500,29 +432,6 @@ footer li.is-active a {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-*/
 
 }
 
