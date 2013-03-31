@@ -105,7 +105,7 @@ nav a:hover {
    ============== */
 
 .main {
-  padding: 30px 0;
+  padding: 0;
 }
 
 .main article h1 {
@@ -136,6 +136,7 @@ body {
   background: transparent;
   width: 100%;
   color: #fff;
+  z-index: 10;
 }
 #footer-container {
   bottom: 0;
@@ -301,10 +302,14 @@ footer li.is-active a {
 }
 
 /* Timeline */
+.timeline {
+  clear: both;
+  padding: 1.5em 0;
+}
 ul.events {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0;
 }
 
 ul.events li {
@@ -314,7 +319,7 @@ ul.events li {
   background: #eee;
   border: 1px solid #ddd;
   color: #707070;
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: bold;
   margin-bottom: 6px;
   padding: 3px 0;
@@ -325,7 +330,7 @@ ul.events li {
 ul.events li em {
   color: #aaa;
   font-weight: normal;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 ul.intervals {
@@ -334,23 +339,278 @@ ul.intervals {
   display: block;
 }
 
-/* The width depends on the number of intervals. For example 100 / 7 = 14.29% -- then subtract a little bit for room for the borders */
+/* The width depends on the number of intervals. For example 100 / 7 = 14.29% -- then subtract a little bit for room for the borders (100 / 21 = 4.76%) */
 ul.intervals li {
   background: #fff url(/img/1x1_eee.gif) repeat-x left 10%;
   border-right: 1px solid #ccc;
   color: #999;
   float: left;
-  font-size: 1.2em;
+  font-size: 0.7em;
   margin: 0;
-  padding: 15px 0;
+  padding: 5px 0;
   text-align: center;
-  width: 14.17%;
+  width: 4.62%;
 }
 
 ul.intervals li.first {
   border-left: 1px solid #ccc;
 }
 /* end timeline */
+
+/* pie chart */
+/*
+  make each pie piece a rectangle twice as high as it is wide.
+  move the transform origin to the middle of the left side.
+  Also ensure that overflow is set to hidden.
+*/
+.legend {
+  clear: right;
+  float: right;
+  font-size: 12px;
+  border: 2px solid grey;
+  padding: 5px;
+  width: 200px;
+}
+.legend div {
+  margin: 3px 0;
+}
+.legend span {
+  float: right;
+  padding-left: 0.5em;
+}
+#beverage-lbl {
+  border-left: #0bf solid 1em;
+  padding-left: 0.5em;
+}
+#telecom-lbl {
+  border-left: #028 solid 1em;
+  padding-left: 0.5em;
+}
+#insurance-lbl {
+  border-left: #03b solid 1em;
+  padding-left: 0.5em;
+}
+#distrib-lbl {
+  border-left: #04e solid 1em;
+  padding-left: 0.5em;
+}
+#health-lbl {
+  border-left: #07f solid 1em;
+  padding-left: 0.5em;
+}
+#automotive-lbl {
+  border-left: #014 solid 1em;
+  padding-left: 0.5em;
+}
+
+.pie {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  left: 150px;
+     -moz-transform-origin: left center;
+      -ms-transform-origin: left center;
+       -o-transform-origin: left center;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+/*
+  unless the piece represents more than 50% of the whole chart.
+  then make it a square, and ensure the transform origin is
+  back in the center.
+
+  NOTE: since this is only ever a single piece, you could
+  move this to a piece specific rule and remove the extra class
+*/
+.pie.big {
+  width: 200px;
+  height: 200px;
+  left: 50px;
+     -moz-transform-origin: center center;
+      -ms-transform-origin: center center;
+       -o-transform-origin: center center;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+/*
+  this is the actual visible part of the pie.
+  Give it the same dimensions as the regular piece.
+  Use border radius make it a half circle.
+  move transform origin to the middle of the right side.
+  Push it out to the left of the containing box.
+*/
+.pie:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: -100px;
+  border-radius: 100px 0 0 100px;
+     -moz-transform-origin: right center;
+      -ms-transform-origin: right center;
+       -o-transform-origin: right center;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+ /* if it's part of a big piece, bring it back into the square */
+.pie.big:before {
+  left: 0;
+}
+/*
+  big pieces will also need a second semicircle, pointed in the
+  opposite direction to hide the first part behind.
+*/
+.pie.big:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 100px;
+  border-radius: 0 100px 100px 0;
+}
+/*
+  add colour to each piece.
+*/
+.pie:nth-of-type(1):before,
+.pie:nth-of-type(1):after,
+.automotive {
+  background-color: #014;
+}
+.pie:nth-of-type(2):after,
+.pie:nth-of-type(2):before,
+.telecom {
+  background-color: #028;
+}
+.pie:nth-of-type(3):after,
+.pie:nth-of-type(3):before,
+.health {
+  background-color: #03b;
+}
+.pie:nth-of-type(4):after,
+.pie:nth-of-type(4):before,
+.insurance {
+  background-color: #04e;
+}
+.pie:nth-of-type(5):after,
+.pie:nth-of-type(5):before,
+.distrib {
+  background-color: #07f;
+}
+.pie:nth-of-type(6):after,
+.pie:nth-of-type(6):before,
+.beverage {
+  background-color: #0bf;
+}
+/*
+  now rotate each piece based on their cumulative starting
+  position
+
+  <div class="pie" data-start="0" data-value="18"></div> <!-- automotive -->
+  <div class="pie highlight" data-start="18" data-value="126"></div> <!-- telecommunications -->
+  <div class="pie" data-start="144" data-value="7"></div> <!-- healthcare -->
+  <div class="pie" data-start="151" data-value="36"></div> <!-- insurance -->
+  <div class="pie" data-start="187" data-value="43"></div> <!-- distribution -->
+  <div class="pie big" data-start="230" data-value="130"></div> <!-- beverage -->
+
+*/
+.pie[data-start="18"] {
+     -moz-transform: rotate(18deg);
+      -ms-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+       -o-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+.pie[data-start="144"] {
+     -moz-transform: rotate(144deg);
+      -ms-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+       -o-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+.pie[data-start="151"] {
+     -moz-transform: rotate(151deg);
+      -ms-transform: rotate(151deg);
+  -webkit-transform: rotate(151deg);
+       -o-transform: rotate(151deg);
+          transform: rotate(151deg);
+}
+.pie[data-start="187"] {
+     -moz-transform: rotate(187deg);
+      -ms-transform: rotate(187deg);
+  -webkit-transform: rotate(187deg);
+       -o-transform: rotate(187deg);
+          transform: rotate(187deg);
+}
+.pie[data-start="230"] {
+     -moz-transform: rotate(230deg);
+      -ms-transform: rotate(230deg);
+  -webkit-transform: rotate(230deg);
+       -o-transform: rotate(230deg);
+          transform: rotate(230deg);
+}
+/*
+  and rotate the amount of the pie that's showing.
+
+  NOTE: add an extra degree to all but the final piece,
+  to fill in unsightly gaps.
+*/
+.pie[data-value="18"]:before {
+     -moz-transform: rotate(19deg);
+      -ms-transform: rotate(19deg);
+  -webkit-transform: rotate(19deg);
+       -o-transform: rotate(19deg);
+          transform: rotate(19deg);
+}
+.pie[data-value="126"]:before {
+     -moz-transform: rotate(127deg);
+      -ms-transform: rotate(127deg);
+  -webkit-transform: rotate(127deg);
+       -o-transform: rotate(127deg);
+          transform: rotate(127deg);
+}
+.pie[data-value="7"]:before {
+     -moz-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+       -o-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+.pie[data-value="36"]:before {
+     -moz-transform: rotate(37deg);
+      -ms-transform: rotate(37deg);
+  -webkit-transform: rotate(37deg);
+       -o-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+.pie[data-value="43"]:before {
+     -moz-transform: rotate(44deg);
+      -ms-transform: rotate(44deg);
+  -webkit-transform: rotate(44deg);
+       -o-transform: rotate(44deg);
+          transform: rotate(44deg);
+}
+.pie[data-value="130"]:before {
+     -moz-transform: rotate(130deg);
+      -ms-transform: rotate(130deg);
+  -webkit-transform: rotate(130deg);
+       -o-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+/*
+NOTE: you could also apply custom classes (i.e. .s0 .v30)
+but if the CSS3 attr() function proposal ever gets implemented,
+then all the above custom piece rules could be replaced with
+the following:
+
+.pie[data-start] {
+   transform:rotate(attr(data-start,deg,0);
+}
+.pie[data-value]:before {
+   transform:rotate(attr(data-value,deg,0);
+}
+*/
+/* end pie chart */
 
 /* ==========================================================================
    Media Queries
