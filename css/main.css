@@ -337,6 +337,7 @@ ul.intervals {
   list-style-type: none;
   padding: 0;
   display: block;
+  margin-bottom: 3em;
 }
 
 /* The width depends on the number of intervals. For example 100 / 7 = 14.29% -- then subtract a little bit for room for the borders (100 / 21 = 4.76%) */
@@ -357,17 +358,197 @@ ul.intervals li.first {
 }
 /* end timeline */
 
+/* bar chart - competencies */
+dl { width: 100%; height: 22em; }
+dt { clear: left; float: left; width: 50%; }
+dd { float: left; width: 50%; }
+#chart {
+  width: 100%;
+}
+#chart dt {
+  float: left;
+  margin: 0 5px 5px 0;
+  padding: 2px 0;
+  display: inline;
+  text-align: right;
+  font-size: 0.9em;
+}
+#chart dd {
+  width: 40%;
+  border-right: 1px solid #aaa;
+  float: left;
+  margin-bottom: 5px;
+  display: inline;
+  font-size: 0.9em;
+}
+#chart dd span {
+  color: #fff;
+  background: #09f;
+  text-align: center;
+  padding: 2px 0;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#09f), to(#077fd0));
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)));
+}
+/* Each width should be changed accordingly */
+#data-one {
+  width: 80%;
+  -webkit-animation-name: bar-one;
+}
+#data-two {
+  width: 60%;
+  -webkit-animation-name: bar-two;
+}
+#data-three {
+  width: 70%;
+  -webkit-animation-name: bar-three;
+}
+#data-four {
+  width: 80%;
+  -webkit-animation-name: bar-four;
+}
+#data-five {
+  width: 90%;
+  -webkit-animation-name: bar-five;
+}
+#data-six {
+  width: 90%;
+  -webkit-animation-name: bar-six;
+}
+#data-seven {
+  width: 80%;
+  -webkit-animation-name: bar-seven;
+}
+#data-eight {
+  width: 60%;
+  -webkit-animation-name: bar-eight;
+}
+#data-one,
+#data-two,
+#data-three,
+#data-four,
+#data-five,
+#data-six,
+#data-seven,
+#data-eight {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+}
+/* Each width should be changed accordingly */
+@-webkit-keyframes bar-one {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 80%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-two {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 60%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-three {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 70%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-four {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 80%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-five {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 90%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-six {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 90%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-seven {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 80%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-eight {
+  0%{
+    width: 0%;
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    width: 60%;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bar-one,
+@-webkit-keyframes bar-two,
+@-webkit-keyframes bar-three,
+@-webkit-keyframes bar-four,
+@-webkit-keyframes bar-five,
+@-webkit-keyframes bar-six,
+@-webkit-keyframes bar-seven,
+@-webkit-keyframes bar-eight {
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* end bar chart - competencies */
+
 /* pie chart */
 /*
   make each pie piece a rectangle twice as high as it is wide.
   move the transform origin to the middle of the left side.
   Also ensure that overflow is set to hidden.
 */
+.industries { width: 50%; }
 .legend {
   clear: right;
   float: right;
   font-size: 12px;
-  border: 2px solid grey;
+  border: 1px solid #aaa;
   padding: 5px;
   width: 200px;
 }
@@ -505,14 +686,6 @@ ul.intervals li.first {
 /*
   now rotate each piece based on their cumulative starting
   position
-
-  <div class="pie" data-start="0" data-value="18"></div> <!-- automotive -->
-  <div class="pie highlight" data-start="18" data-value="126"></div> <!-- telecommunications -->
-  <div class="pie" data-start="144" data-value="7"></div> <!-- healthcare -->
-  <div class="pie" data-start="151" data-value="36"></div> <!-- insurance -->
-  <div class="pie" data-start="187" data-value="43"></div> <!-- distribution -->
-  <div class="pie big" data-start="230" data-value="130"></div> <!-- beverage -->
-
 */
 .pie[data-start="18"] {
      -moz-transform: rotate(18deg);
