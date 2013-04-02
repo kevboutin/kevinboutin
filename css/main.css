@@ -138,6 +138,9 @@ body {
   bottom: 0;
   z-index: 200;
 }
+.no-svg .logo {
+  background-image: url("../img/kblogo-sm.png");
+}
 .jobtitle {
   font-size: 0.9em;
   font-weight: bold;
@@ -680,14 +683,14 @@ dd { float: left; width: 50%; }
   move the transform origin to the middle of the left side.
   Also ensure that overflow is set to hidden.
 */
-.industries { width: 50%; }
+.industries {
+  width: 67%; /* must be at 67% to prevent collision with pie */
+  height: 13em;
+ }
 .legend {
-  clear: right;
-  float: right;
   font-size: 12px;
   border: 1px solid #aaa;
   padding: 5px;
-  width: 200px;
 }
 .legend div {
   margin: 3px 0;
@@ -927,6 +930,11 @@ the following:
    ========================================================================== */
 
 @media screen and (min-width: 45.0625em) {
+  .legend {
+    clear: right;
+    float: right;
+    width: 200px;
+  }
   #top .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -974,6 +982,10 @@ the following:
 }
 
 @media screen and (max-width: 45em) {
+  .legend {
+    clear: right;
+    width: 200px;
+  }
   .logo { top: 25px; }
   nav {
     position: absolute;
@@ -1028,20 +1040,20 @@ the following:
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
   }
-  .js-ready #nav .block {
+  .js-ready nav .block {
     background: transparent;
   }
-  .js-ready #nav .close-btn {
+  .js-ready nav .close-btn {
     display: block;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
   }
-  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
+  .js-ready nav .close-btn:focus, .js-ready nav .close-btn:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 
-  .js-ready #nav {
+  .js-ready nav {
     left: -70%;
   }
   .js-ready #canvas {
@@ -1051,7 +1063,7 @@ the following:
   .js-nav #inner-wrap {
     left: 70%;
   }
-  .csstransforms3d.csstransitions.js-ready #nav {
+  .csstransforms3d.csstransitions.js-ready nav {
     left: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     -moz-transform: translate3d(-100%, 0, 0);
@@ -1090,7 +1102,7 @@ the following:
     transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
   }
 
-  .csstransforms3d.csstransitions.js-ready #nav .block {
+  .csstransforms3d.csstransitions.js-ready nav .block {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
     -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
@@ -1110,7 +1122,7 @@ the following:
     transform-origin: 50% 0%;
   }
 
-  .csstransforms3d.csstransitions.js-nav #nav .block {
+  .csstransforms3d.csstransitions.js-nav nav .block {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
