@@ -152,12 +152,6 @@ body {
 }
 .toppush { padding-top: 2em; }
 .botpush { padding-bottom: 5em; }
-#trainingmap {/*&key=AIzaSyAdrbN0j4aqBCFHP_zdvPqGCJIoadfmtGo*/
-  background: url('http://maps.googleapis.com/maps/api/staticmap?center=Vienna,Austria&zoom=1&scale=1&format=jpeg&size=400x330&maptype=hybrid&markers=color:blue|label:A|33.761453,-84.388847&markers=color:green|label:P|14.556296,121.017702&markers=color:white|label:S|-33.861204,151.212992&markers=color:yellow|label:V|52.48278,18.222649&markers=color:purple|label:M|-37.934338,145.037277&markers=color:orange|label:J|-6.241586,106.834946&markers=color:gray|label:O|37.74425,-87.152853&markers=color:black|label:C|31.395847,120.596924&markers=color:red|label:K|37.557251,126.973634&sensor=false');
-  width: 400px;
-  height: 330px;
-  float: left;
-}
 .smtxt {
   font-size: 0.8em;
   text-align: right;
@@ -930,6 +924,12 @@ the following:
    ========================================================================== */
 
 @media screen and (min-width: 45.0625em) {
+  #trainingmap {/*&key=AIzaSyAdrbN0j4aqBCFHP_zdvPqGCJIoadfmtGo*/
+    background: url('//maps.googleapis.com/maps/api/staticmap?center=Vienna,Austria&zoom=1&scale=1&format=jpeg&size=400x330&maptype=hybrid&markers=color:blue|label:A|33.761453,-84.388847&markers=color:green|label:P|14.556296,121.017702&markers=color:white|label:S|-33.861204,151.212992&markers=color:yellow|label:V|52.48278,18.222649&markers=color:purple|label:M|-37.934338,145.037277&markers=color:orange|label:J|-6.241586,106.834946&markers=color:gray|label:O|37.74425,-87.152853&markers=color:black|label:C|31.395847,120.596924&markers=color:red|label:K|37.557251,126.973634&sensor=false');
+    width: 400px;
+    height: 330px;
+    float: left;
+  }
   .legend {
     clear: right;
     float: right;
@@ -982,9 +982,29 @@ the following:
 }
 
 @media screen and (max-width: 45em) {
+  #footer-container {
+    position: relative;
+  }
+  .industries {
+    height: 26em;
+  }
   .legend {
     clear: right;
     width: 200px;
+  }
+  .toppush { display: none; }
+  .timeline { display: none; }
+  dt { clear: left; float: none; width: 100%; }
+  dd { float: none; width: 100%; }
+  dl { height: 37em; }
+  #chart dt {
+    float: none;
+    display: block;
+  }
+  #chart dd {
+    width: 100%;
+    float: none;
+    display: block;
   }
   .logo { top: 25px; }
   nav {
