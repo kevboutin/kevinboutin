@@ -10,8 +10,10 @@
 		<meta name="description" content="All about me - Kevin Boutin"/>
 		<meta name="author" content="Kevin Boutin"/>
 		<meta name="viewport" content="width=device-width"/>
+		<link rel="dns-prefetch" href="//www.google-analytics.com">
 		<link rel="stylesheet" href="css/normalize.min.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
+		<!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 	<body>
@@ -37,8 +39,11 @@
 							</div>
 						</nav>
 						<h1 class="title">kevin boutin</h1>
-						<object class="logo" type="image/svg+xml" data="img/kblogo-sm.svg" style="-webkit-mask-image:url(img/kblogo-sm.svg)">
-						</object>
+						<div id="logo">
+							<img src="img/kblogo-sm.svg" alt=" " class="logo" style="-webkit-mask-image:url(img/kblogo-sm.svg)"/>
+							<!--<object class="logo" type="image/svg+xml" data="img/kblogo-sm.svg" style="-webkit-mask-image:url(img/kblogo-sm.svg)">
+							</object>-->
+						</div>
 					</header>
 				</div>
 				<div id="main-container">
@@ -48,7 +53,7 @@
 								<div class="wrapper">
 									<h2>about me</h2>
 									<p>I possess over twenty years of strong software development experience in various industries. Java and web related environments are my specialty with familiarity in mobile application development. I am actively involved in the full project life cycle from user requirements to development, testing and implementation. I am a self-learner, leader, great team player and am quite capable of working independently.</p>
-								</div>
+								</div> <!-- .wrapper -->
 							</section>
 							<section id="competencies">
 								<div class="wrapper clearfix">
@@ -72,7 +77,7 @@
 										<dt>Photoshop + Illustrator</dt>
 										<dd><span id="data-eight">6/10</span></dd>
 									</dl>
-								</div>
+								</div> <!-- .wrapper .clearfix -->
 							</section>
 							<section id="experience">
 								<div class="wrapper clearfix">
@@ -95,7 +100,7 @@
 										<div class="pie" data-start="187" data-value="43"></div>
 										<div class="pie" data-start="230" data-value="130"></div>
 									</div>
-								</div>
+								</div> <!-- .wrapper .clearfix -->
 								<div class="timeline">
 									<ul class="events">
 										<li style="width: 14.68%; left: 85%;">HTML5 <em>(2011 - 2013)</em ></li>
@@ -206,25 +211,25 @@
 									<div id="trainingmap"></div>
 									<p class="summary smtxt"><strong>Professional training received:</strong></p>
 									<ul class="accomp smtxt botpush">
-										<li>Learning Microsoft Visual C++ - Atlanta,&nbsp;1995</li>
-										<li>IBM Visual Age C++ for OS/2 - Atlanta,&nbsp;1995</li>
-										<li>IBM MQSeries Introduction – Sydney,&nbsp;2000</li>
-										<li>IBM MQSeries System Administration – Sydney,&nbsp;2000</li>
-										<li>IBM MQSeries Application Development – Sydney,&nbsp;2000</li>
-										<li>Mercator Mapping Fundamentals – Sydney,&nbsp;2000</li>
-										<li>Oracle SQL/SQL Plus – Sydney,&nbsp;2001</li>
-										<li>Oracle PL/SQL – Sydney,&nbsp;2001</li>
-										<li>Oracle Reports Developer – Sydney,&nbsp;2001</li>
-										<li>Oracle Functional Foundations – Sydney,&nbsp;2001</li>
-										<li>Oracle Workflow – Sydney,&nbsp;2001</li>
-										<li>Sun Java Programming – Sydney,&nbsp;2001</li>
-										<li>HP-Unix Fundamentals – Sydney,&nbsp;2001</li>
-										<li>JBoss System Administration – Atlanta,&nbsp;2009</li>
-										<li>Spring Fundamentals – Atlanta,&nbsp;2010</li>
-										<li>HTML5 – Atlanta,&nbsp;2011</li>
-										<li>Git Essentials - Atlanta,&nbsp;2012</li>
+										<li>Learning Microsoft Visual C++ - Atlanta&nbsp;1995</li>
+										<li>IBM Visual Age C++ for OS/2 - Atlanta&nbsp;1995</li>
+										<li>IBM MQSeries Introduction – Sydney&nbsp;2000</li>
+										<li>IBM MQSeries System Administration – Sydney&nbsp;2000</li>
+										<li>IBM MQSeries Application Development – Sydney&nbsp;2000</li>
+										<li>Mercator Mapping Fundamentals – Sydney&nbsp;2000</li>
+										<li>Oracle SQL/SQL Plus – Sydney&nbsp;2001</li>
+										<li>Oracle PL/SQL – Sydney&nbsp;2001</li>
+										<li>Oracle Reports Developer – Sydney&nbsp;2001</li>
+										<li>Oracle Functional Foundations – Sydney&nbsp;2001</li>
+										<li>Oracle Workflow – Sydney&nbsp;2001</li>
+										<li>Sun Java Programming – Sydney&nbsp;2001</li>
+										<li>HP-Unix Fundamentals – Sydney&nbsp;2001</li>
+										<li>JBoss System Administration – Atlanta&nbsp;2009</li>
+										<li>Spring Fundamentals – Atlanta&nbsp;2010</li>
+										<li>HTML5 – Atlanta&nbsp;2011</li>
+										<li>Git Essentials - Atlanta&nbsp;2012</li>
 									</ul>
-								</div>
+								</div> <!-- .wrapper .clearfix -->
 							</section>
 						</article>
 					</div> <!-- .main -->
@@ -232,15 +237,15 @@
 				<div id="footer-container">
 					<footer class="clearfix">
 						<div class="wrapper">
-							<p class="copy">&copy; 2013 Kevin Boutin</p>
+							<p class="copy">&copy; 2013 Kevin Boutin <a rel="license" title="creative commons licensed work" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
 							<ul>
-								<li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me">Google+</a></li>
-								<li><a href="//facebook.com/kevin.boutin" title="me on facebook" rel="me">facebook</a></li>
-								<li><a href="//twitter.com/kevboutin" title="me on twitter" rel="me">twitter</a></li>
-								<li><a href="//www.behance.net/kevboutin" title="me on behance" rel="me">behance</a></li>
-								<li><a href="//linkedin.com/in/kevinboutin/" title="me on linkedin" rel="me">linkedin</a></li>
-								<li><a href="//github.com/kevboutin" title="fork me on github" rel="me">github</a></li>
-								<li><a href="mailto:me@kevinboutin.me" title="me on email" rel="me">email</a></li>
+								<li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me"><span aria-hidden="true" class="icon-google-plus"></span><span class="descrip">&nbsp;google+</span></a></li>
+								<li><a href="//facebook.com/kevin.boutin" title="me on facebook" rel="me"><span aria-hidden="true" class="icon-facebook"></span><span class="descrip">&nbsp;facebook</span></a></li>
+								<li><a href="//twitter.com/kevboutin" title="me on twitter" rel="me"><span aria-hidden="true" class="icon-twitter"></span><span class="descrip">&nbsp;twitter</span></a></li>
+								<li><a href="//www.behance.net/kevboutin" title="me on behance" rel="me"><span aria-hidden="true" class="icon-behanced"></span><span class="descrip">&nbsp;behance</span></a></li>
+								<li><a href="//linkedin.com/in/kevinboutin/" title="me on linkedin" rel="me"><span aria-hidden="true" class="icon-linkedin"></span><span class="descrip">&nbsp;linkedin</span></a></li>
+								<li><a href="//github.com/kevboutin" title="fork me on github" rel="me"><span aria-hidden="true" class="icon-github"></span><span class="descrip">&nbsp;github</span></a></li>
+								<li><a href="mailto:me@kevinboutin.me" title="me on email" rel="me"><span aria-hidden="true" class="icon-mail"></span><span class="descrip">&nbsp;email</span></a></li>
 							</ul>
 						</div>
 					</footer>

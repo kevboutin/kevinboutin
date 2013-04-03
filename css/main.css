@@ -129,18 +129,87 @@ nav a:hover {
    ========================================================================== */
 @font-face {
   font-family: 'apple_chancerychancery';
-  src: url('apple_chancery-webfont.eot');
-  src: url('apple_chancery-webfont.eot?#iefix') format('embedded-opentype'),
-       url('apple_chancery-webfont.woff') format('woff'),
-       url('apple_chancery-webfont.ttf') format('truetype'),
-       url('apple_chancery-webfont.svg#apple_chancerychancery') format('svg');
+  src: url('../fonts/apple_chancery-webfont.eot');
+  src: url('../fonts/apple_chancery-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/apple_chancery-webfont.woff') format('woff'),
+       url('../fonts/apple_chancery-webfont.ttf') format('truetype'),
+       url('../fonts/apple_chancery-webfont.svg#apple_chancerychancery') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'kbglyph';
+  src: url('../fonts/kbglyph.eot');
+  src: url('../fonts/kbglyph.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/kbglyph.woff') format('woff'),
+       url('../fonts/kbglyph.ttf') format('truetype'),
+       url('../fonts/kbglyph.svg#kbglyph') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-twitter,
+.icon-facebook,
+.icon-github,
+.icon-google-plus,
+.icon-linkedin,
+.icon-mail,
+.icon-behanced,
+.icon-creativecommons,
+.icon-kblogo-sm,
+.icon-html5,
+.icon-css3 {
+  font-family: 'kbglyph';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1.5em;
+  line-height: 1;
+  padding-right: 0.2em;
+  vertical-align: sub;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-mail:before {
+  content: "\e038";
+}
+.icon-behanced:before {
+  content: "\e03d";
+}
+.icon-creativecommons:before {
+  content: "\e040";
+}
+.icon-kblogo-sm:before {
+  content: "\e04b";
+}
+.icon-html5:before {
+  content: "\e052";
+}
+.icon-css3:before {
+  content: "\e053";
 }
 body {
   background: url('../img/noise.png');
 }
-h1, h2 { font-family: 'apple_chancerychancery'; }
+h1, h2 {
+  font-family: 'apple_chancerychancery';
+  -webkit-font-smoothing: antialiased;
+}
 .logo {
   position: fixed;
   top: 6px;
@@ -149,8 +218,22 @@ h1, h2 { font-family: 'apple_chancerychancery'; }
   bottom: 0;
   z-index: 200;
 }
-.no-svg .logo {
+.no-svg #logo {
   background-image: url("../img/kblogo-sm.png");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%
+}
+/*.no-svg #logo img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}*/
+.lt-ie9 #logo {
+  width: 25px;
+  height: 25px;
+  top: 13px;
+  right: 13px;
 }
 .jobtitle {
   font-size: 0.9em;
@@ -200,7 +283,9 @@ article {
 }
 #accomplishments {
   background: url('../img/noise.png') #eee;
-  padding-bottom: 2.1em;
+  padding: 0.5em 0 2.1em 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 header#top {
   margin-top: 0;
@@ -240,9 +325,9 @@ code.cmdline {
 pre.nowrap { white-space: nowrap !important; }
 
 /* Links */
-a { color: #3f59bb; }
-a:visited { color: #3f59bb; }
-a:hover { color: #06e; }
+a { color: #ccc; text-decoration: none; }
+a:visited { color: #ccc; text-decoration: none; }
+a:hover { color: #fff; text-decoration: none; }
 
 /* Standard links that are not images */
 #main a:not(.image) {
@@ -274,7 +359,7 @@ a:hover { color: #06e; }
   padding: 0;
   border: 0;
   outline: none;
-  background: url("../img/close-btn.svg") left center no-repeat;
+  background: url("../img/close-btn.svg") left bottom no-repeat;
   background-size: 1.875em 1.875em;
   overflow: hidden;
   white-space: nowrap;
@@ -1014,6 +1099,14 @@ the following:
   }
 }
 
+@media screen and (max-width: 60em) {
+  .descrip { display: none; visibility: hidden; }
+}
+
+@media screen and (max-width: 55em) {
+  .timeline { display: none; }
+}
+
 @media screen and (max-width: 45em) {
   h1.title {
     text-align: right;
@@ -1031,7 +1124,6 @@ the following:
     width: 200px;
   }
   .toppush { display: none; }
-  .timeline { display: none; }
   dt { clear: left; float: none; width: 100%; }
   dd { float: none; width: 100%; }
   dl { height: 37em; }
@@ -1098,20 +1190,20 @@ the following:
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
   }
-  .js-ready nav .block {
+  .js-ready #nav .block {
     background: transparent;
   }
-  .js-ready nav .close-btn {
+  .js-ready #nav .close-btn {
     display: block;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
   }
-  .js-ready nav .close-btn:focus, .js-ready nav .close-btn:hover {
+  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 
-  .js-ready nav {
+  .js-ready #nav {
     left: -70%;
   }
   .js-ready #canvas {
@@ -1121,7 +1213,7 @@ the following:
   .js-nav #inner-wrap {
     left: 70%;
   }
-  .csstransforms3d.csstransitions.js-ready nav {
+  .csstransforms3d.csstransitions.js-ready #nav {
     left: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     -moz-transform: translate3d(-100%, 0, 0);
@@ -1160,7 +1252,7 @@ the following:
     transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
   }
 
-  .csstransforms3d.csstransitions.js-ready nav .block {
+  .csstransforms3d.csstransitions.js-ready #nav .block {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
     -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
@@ -1180,7 +1272,7 @@ the following:
     transform-origin: 50% 0%;
   }
 
-  .csstransforms3d.csstransitions.js-nav nav .block {
+  .csstransforms3d.csstransitions.js-nav #nav .block {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
