@@ -186,11 +186,11 @@ ul.accomp {
 }
 article {
   background: url('../img/noise.png') #ccc;
-  padding: 3em 0;
+  padding: 0;
 }
 #about {
   background: url('../img/noise.png') #eee;
-  padding: 2em 0;
+  padding: 4em 0;
 }
 #competencies {
   background: url('../img/noise.png') #fff;
