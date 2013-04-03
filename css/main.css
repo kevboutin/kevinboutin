@@ -1048,11 +1048,6 @@ the following:
     height: 330px;
     float: left;
   }
-  .legend {
-    clear: right;
-    float: right;
-    width: 200px;
-  }
   #top .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -1115,13 +1110,6 @@ the following:
   }
   #footer-container {
     position: relative;
-  }
-  .industries {
-    height: 26em;
-  }
-  .legend {
-    clear: right;
-    width: 200px;
   }
   .toppush { display: none; }
   dt { clear: left; float: none; width: 100%; }
@@ -1283,7 +1271,23 @@ the following:
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .industries {
+    height: 26em;
+  }
+  .legend {
+    clear: right;
+    width: 190px;
+  }
+}
+
 @media only screen and (min-width: 480px) {
+  .legend {
+    clear: right;
+    float: right;
+    width: 190px;
+  }
+  .industries { width: 100%; }
 
 /* ====================
     INTERMEDIATE: Menu
@@ -1322,6 +1326,10 @@ the following:
 @media only screen and (min-width: 768px) {
 
 
+}
+
+@media only screen and (min-width: 980px) {
+  .industries { width: 47%; }
 }
 
 @media only screen and (min-width: 1140px) {
