@@ -140,7 +140,7 @@ nav a:hover {
 body {
   background: url('../img/noise.png');
 }
-h1 { font-family: 'apple_chancerychancery'; }
+h1, h2 { font-family: 'apple_chancerychancery'; }
 .logo {
   position: fixed;
   top: 6px;
@@ -200,15 +200,12 @@ article {
 }
 #accomplishments {
   background: url('../img/noise.png') #eee;
+  padding-bottom: 2.1em;
 }
 header#top {
   margin-top: 0;
 }
-h1.title {
-  text-align: right;
-  float: right;
-  margin-right: 1em;
-}
+.summary, .accomp { font-size: 0.9em; }
 .copy {
   font-size: .8em;
   float: left;
@@ -937,6 +934,29 @@ the following:
    ========================================================================== */
 
 @media screen and (min-width: 45.0625em) {
+  h1 {
+    background-color: #08d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#077fd0), to(#09f));
+    background: -webkit-linear-gradient(top, #077fd0, #09f);
+    background-image: -moz-linear-gradient(top, #077fd0, #09f);
+    background-image: -ms-linear-gradient(top, #077fd0, #09f);
+    background-image: -o-linear-gradient(top, #077fd0, #09f);
+    background-image: linear-gradient(to bottom, #077fd0, #09f);
+  }
+  h1.title {
+    text-align: right;
+    float: right;
+    padding: 0.5em 1em 0.5em 0.3em;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+       -moz-border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+            border-top-left-radius: 10px;
+       -moz-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+  }
   #trainingmap {/*&key=AIzaSyAdrbN0j4aqBCFHP_zdvPqGCJIoadfmtGo*/
     background: url('//maps.googleapis.com/maps/api/staticmap?center=Vienna,Austria&zoom=1&scale=1&format=jpeg&size=400x330&maptype=hybrid&markers=color:blue|label:A|33.761453,-84.388847&markers=color:green|label:P|14.556296,121.017702&markers=color:white|label:S|-33.861204,151.212992&markers=color:yellow|label:V|52.48278,18.222649&markers=color:purple|label:M|-37.934338,145.037277&markers=color:orange|label:J|-6.241586,106.834946&markers=color:gray|label:O|37.74425,-87.152853&markers=color:black|label:C|31.395847,120.596924&markers=color:red|label:K|37.557251,126.973634&sensor=false');
     width: 400px;
@@ -995,6 +1015,11 @@ the following:
 }
 
 @media screen and (max-width: 45em) {
+  h1.title {
+    text-align: right;
+    float: right;
+    padding: 0.5em 1em 0.5em 0.3em;
+  }
   #footer-container {
     position: relative;
   }
