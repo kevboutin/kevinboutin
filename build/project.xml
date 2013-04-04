@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+<project name="KevinBoutin Custom build" default="build" basedir="../">
+
+  <!-- Use this file to define any custom build targets
+       (for example, automatically deploying via FTP). -->
+  <target name="-tarball">
+    <condition property="publish.exists">
+      <available file="${dir.publish}" type="dir"/>
+    </condition>
+    <condition property="dist.exists">
+      <available file="${dir.dist}" type="dir"/>
+    </condition>
+    <if>
+      <equals arg1="${publish.exists}" arg2="true"/>
+      <then>
+        <echo message="Compressing release into a convenient tarball within ${dir.source}/${dir.dist}"/>
+        <if>
+          <equals arg1="${dist.exists}" arg2="true"/>
+          <then>
+            <mkdir dir="${dir.dist}"/>
+          </then>
+        </if>
+        <tar destfile="${dir.dist}/release.tar" basedir="${dir.publish}"
+             includes="*,**/*"/>
+        <gzip src="${dir.dist}/release.tar"
+              destfile="${dir.dist}/release.tar.gz"/>
+        <delete file="${dir.dist}/release.tar"/>
+      </then>
+    </if>
+  </target>
+
+</project>
