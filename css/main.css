@@ -1022,6 +1022,13 @@ the following:
        -moz-border-bottom-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
             border-bottom-left-radius: 10px;
+       -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+            box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+                filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
   }
   #trainingmap {/*&key=AIzaSyAdrbN0j4aqBCFHP_zdvPqGCJIoadfmtGo*/
     background: url('//maps.googleapis.com/maps/api/staticmap?center=Vienna,Austria&zoom=1&scale=1&format=jpeg&size=400x330&maptype=hybrid&markers=color:blue|label:A|33.761453,-84.388847&markers=color:green|label:P|14.556296,121.017702&markers=color:white|label:S|-33.861204,151.212992&markers=color:yellow|label:V|52.48278,18.222649&markers=color:purple|label:M|-37.934338,145.037277&markers=color:orange|label:J|-6.241586,106.834946&markers=color:gray|label:O|37.74425,-87.152853&markers=color:black|label:C|31.395847,120.596924&markers=color:red|label:K|37.557251,126.973634&sensor=false');
