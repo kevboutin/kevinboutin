@@ -217,23 +217,7 @@ h1, h2 {
   left: auto;
   bottom: 0;
   z-index: 200;
-}
-.no-svg #logo {
-  background-image: url("../img/kblogo-sm.png");
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%
-}
-/*.no-svg #logo img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}*/
-.lt-ie9 #logo {
-  width: 25px;
-  height: 25px;
-  top: 13px;
-  right: 13px;
+  font-size: 2.1em;
 }
 .jobtitle {
   font-size: 0.9em;
@@ -268,7 +252,7 @@ ul.accomp {
   right: 0;
 }
 article {
-  background: url('../img/noise.png') #ccc;
+  background: url('../img/noise.png') #eee;
   padding: 0;
 }
 #about {
@@ -468,9 +452,6 @@ footer li {
   vertical-align: baseline;
   padding-right: 0.5em;
 }
-/*nav li {
-  padding-right: 1.0em;
-}*/
 nav li {
   display: block;
 }
@@ -1271,6 +1252,13 @@ the following:
   }
 }
 
+@media only screen and (max-width: 534px) {
+  .copy {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .industries {
     height: 26em;
@@ -1278,6 +1266,10 @@ the following:
   .legend {
     clear: right;
     width: 190px;
+  }
+  footer li {
+    padding-right: 0.3em;
+    padding-left: 0.3em;
   }
 }
 
