@@ -231,7 +231,7 @@ h1, h2 {
 .toppush { padding-top: 2em; }
 .botpush { padding-bottom: 5em; }
 .smtxt {
-  font-size: 0.8em;
+  font-size: 0.8em !important;
   text-align: right;
   list-style-type: none;
 }
