@@ -17,9 +17,9 @@ js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
 img/close-btn.png
 img/close-btn.svg
 img/gavetrainingmap.jpg
-img/nav-bar.png
 img/nav-icon.png
 img/nav-icon.svg
+img/nav-bar.png
 img/noise.png
 fonts/kbglyph.eot
 fonts/kbglyph.svg
@@ -30,7 +30,9 @@ fonts/apple_chancery-webfont.svg
 fonts/apple_chancery-webfont.ttf
 fonts/apple_chancery-webfont.woff
 css/normalize.min.css
+main.css
 #
 NETWORK:
-# Google Analytics
 http://www.google-analytics.com/ga.js
+http://www.google-analytics.com/__utm.gif
+http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics-storage.png

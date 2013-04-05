@@ -705,7 +705,12 @@
 
     <echo message="Updating the HTML with the new css filename: ${style.css}"/>
     <replaceregexp match="&lt;link(.+)href=['&quot;]?(.*)/${file.root.stylesheet}(?:\?.*)?['&quot;\s]?(.*/?&gt;)"
-    replace="&lt;link\1href='\2/${css.sha}.css'\3" flags="m">
+                   replace="&lt;link\1href='\2/${css.sha}.css'\3" flags="m">
+      <fileset dir="${dir.intermediate}" includes="${page-files}"/>
+    </replaceregexp>
+    <echo message="Updating the manifest with the new css filename: ${style.css}"/>
+    <replaceregexp byline="true" match="main.css"
+                   replace="${style.css}" flags="g">
       <fileset dir="${dir.intermediate}" includes="${page-files}"/>
     </replaceregexp>
 
