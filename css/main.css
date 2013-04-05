@@ -228,15 +228,24 @@ h1, h2 {
   margin-bottom: 0;
   margin-top: 2.5em;
 }
+.roundimg {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+  height: 286px;
+  width: 400px;
+  overflow: hidden; /* keeps the image corners from peeking out over the border */
+}
 .toppush { padding-top: 2em; }
-.botpush { padding-bottom: 5em; }
+.botpush { padding-bottom: 6em; }
 .smtxt {
   font-size: 0.8em !important;
   text-align: right;
   list-style-type: none;
 }
 ul.accomp {
-  margin: 0;
+  margin: 0 0 5em 0;
   padding-left: 1em;
 }
 #header-container,
@@ -1032,6 +1041,10 @@ the following:
   }
   #trainingmap {
     float: left;
+    width: 400px;
+  }
+  .html5logo {
+    padding: 3.5em;
   }
   #top .nav-btn {
     border: 0;
@@ -1424,6 +1437,10 @@ the following:
 
     abbr[title]:after {
         content: " (" attr(title) ")";
+    }
+
+    .intervals {
+      content: "";
     }
 
     /*
