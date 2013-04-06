@@ -489,8 +489,11 @@ nav li a:hover,
 footer li a:focus,
 footer li a:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
+}
+nav li a:focus,
+nav li a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 nav li.is-active a,
 footer li.is-active a {
