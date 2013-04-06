@@ -1034,13 +1034,13 @@ the following:
        -moz-border-bottom-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
             border-bottom-left-radius: 10px;
-       -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
-            box-shadow: 3px 3px 4px #000;
+       -moz-box-shadow: 3px 3px 4px #103;
+    -webkit-box-shadow: 3px 3px 4px #103;
+            box-shadow: 3px 3px 4px #103;
     /* For IE 8 */
-            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#130f30')";
     /* For IE 5.5 - 7 */
-                filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#130f30');
   }
   #trainingmap {
     float: left;
@@ -1048,6 +1048,11 @@ the following:
   }
   .html5logo {
     padding: 3.5em;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
   }
   #top .nav-btn {
     border: 0;
