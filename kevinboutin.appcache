@@ -12,7 +12,6 @@ apple-touch-icon-72x72-precomposed.png
 apple-touch-icon-precomposed.png
 index.html
 js/lte-ie7.js
-js/main.js
 js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
 img/close-btn.png
 img/close-btn.svg
