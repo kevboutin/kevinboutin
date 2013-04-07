@@ -1048,11 +1048,14 @@ the following:
   }
   .html5logo {
     padding: 3.5em;
+    width: 229px;
+    height: 64px;
+/* Use grayscale filters if you use the html5 logo site
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+    -o-filter: grayscale(100%);*/
   }
   #top .nav-btn {
     border: 0;
