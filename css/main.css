@@ -288,13 +288,16 @@ header#top {
   font-size: .8em;
   float: left;
 }
+code,
+pre.cmdline {
+     -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
 code {
   color: #303088;
   background-color: #eee;
   border: 1px solid #ddd;
-     -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
 }
 .cmdline {
   -webkit-font-smoothing: auto;
@@ -306,12 +309,7 @@ code {
   color: #0d4;
   background-color: #333;
 }
-pre.cmdline {
-  white-space: pre;
-     -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-}
+pre.cmdline,
 code.cmdline {
   white-space: pre;
 }
@@ -367,7 +365,8 @@ a:hover { color: #fff; text-decoration: none; }
 .no-svg .close-btn {
   background-image: url("../img/close-btn.png");
 }
-.close-btn:focus, .close-btn:hover {
+.close-btn:focus,
+.close-btn:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
@@ -382,7 +381,8 @@ a:hover { color: #fff; text-decoration: none; }
 .no-svg .nav-btn {
   background-image: url("../img/nav-icon.png");
 }
-.nav-btn:hover, .nav-btn:focus {
+.nav-btn:hover,
+.nav-btn:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
@@ -1052,16 +1052,7 @@ the following:
     -o-filter: grayscale(100%);*/
   }
   #top .nav-btn,
-  nav .close-btn {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
+  nav .close-btn,
   nav .block-title {
     border: 0;
     clip: rect(0 0 0 0);
@@ -1168,7 +1159,6 @@ the following:
   .js-ready #nav {
     height: 100%;
     width: 70%;
-    /*background: #333;*/
     -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
@@ -1181,7 +1171,8 @@ the following:
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
   }
-  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
+  .js-ready #nav .close-btn:focus,
+  .js-ready #nav .close-btn:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
