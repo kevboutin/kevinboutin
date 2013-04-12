@@ -1205,7 +1205,8 @@ the following:
 }
 
 @media only screen and (max-width: 534px) {
-  .copy {
+  .copy,
+  .techlogo {
     display: none;
     visibility: hidden;
   }
