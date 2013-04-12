@@ -2,11 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
+html {
   color: #333;
 }
 
@@ -25,27 +21,8 @@ body {
   text-shadow: none;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
 img {
   vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
 }
 
 .chromeframe {
@@ -288,32 +265,6 @@ header#top {
   font-size: .8em;
   float: left;
 }
-code,
-pre.cmdline {
-     -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-}
-code {
-  color: #303088;
-  background-color: #eee;
-  border: 1px solid #ddd;
-}
-.cmdline {
-  -webkit-font-smoothing: auto;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  overflow: auto;
-  padding: 10px;
-  border: 2px solid #ddd;
-  color: #0d4;
-  background-color: #333;
-}
-pre.cmdline,
-code.cmdline {
-  white-space: pre;
-}
-pre.nowrap { white-space: nowrap !important; }
 
 /* Links */
 a { color: #ccc; text-decoration: none; }
@@ -1437,22 +1388,8 @@ the following:
         content: "";
     }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
     img {
         page-break-inside: avoid;
-    }
-
-    img {
         max-width: 100% !important;
     }
 
@@ -1461,14 +1398,12 @@ the following:
     }
 
     p,
-    h2,
-    h3 {
+    h2 {
         orphans: 3;
         widows: 3;
     }
 
-    h2,
-    h3 {
+    h2 {
         page-break-after: avoid;
     }
 }
