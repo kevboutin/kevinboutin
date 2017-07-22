@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2013-04-04:v1
+# 2016-02-22:v1.2
 
 # Explicitly cached 'master entries'.
 CACHE:
@@ -30,7 +30,6 @@ fonts/apple_chancery-webfont.svg
 fonts/apple_chancery-webfont.ttf
 fonts/apple_chancery-webfont.woff
 css/normalize.min.css
-main.css
 #
 NETWORK:
 http://www.google-analytics.com/ga.js

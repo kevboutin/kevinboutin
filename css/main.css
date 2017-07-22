@@ -563,11 +563,11 @@ dd { float: left; width: 50%; }
 }
 /* Each width should be changed accordingly */
 #data-one {
-  width: 80%;
+  width: 90%;
   -webkit-animation-name: bar-one;
 }
 #data-two {
-  width: 60%;
+  width: 80%;
   -webkit-animation-name: bar-two;
 }
 #data-three {
@@ -613,7 +613,7 @@ dd { float: left; width: 50%; }
     -webkit-transform: rotate(0deg);
   }
   100%{
-    width: 80%;
+    width: 90%;
     -webkit-transform: rotate(360deg);
   }
 }
@@ -623,7 +623,7 @@ dd { float: left; width: 50%; }
     -webkit-transform: rotate(0deg);
   }
   100%{
-    width: 60%;
+    width: 80%;
     -webkit-transform: rotate(360deg);
   }
 }
@@ -726,24 +726,32 @@ dd { float: left; width: 50%; }
   float: right;
   padding-left: 0.5em;
 }
-#beverage-lbl {
+#other-lbl {
   border-left: #0bf solid 1em;
   padding-left: 0.5em;
 }
+#television-lbl {
+  border-left: #09f solid 1em;
+  padding-left: 0.5em;
+}
+#beverage-lbl {
+  border-left: #08f solid 1em;
+  padding-left: 0.5em;
+}
 #telecom-lbl {
-  border-left: #028 solid 1em;
+  border-left: #06f solid 1em;
   padding-left: 0.5em;
 }
 #insurance-lbl {
-  border-left: #03b solid 1em;
-  padding-left: 0.5em;
-}
-#distrib-lbl {
   border-left: #04e solid 1em;
   padding-left: 0.5em;
 }
+#distrib-lbl {
+  border-left: #03b solid 1em;
+  padding-left: 0.5em;
+}
 #health-lbl {
-  border-left: #07f solid 1em;
+  border-left: #028 solid 1em;
   padding-left: 0.5em;
 }
 #automotive-lbl {
@@ -843,11 +851,21 @@ dd { float: left; width: 50%; }
 .pie:nth-of-type(5):after,
 .pie:nth-of-type(5):before,
 .distrib {
-  background-color: #07f;
+  background-color: #06f;
 }
 .pie:nth-of-type(6):after,
 .pie:nth-of-type(6):before,
 .beverage {
+  background-color: #08f;
+}
+.pie:nth-of-type(7):after,
+.pie:nth-of-type(7):before,
+.television {
+  background-color: #09f;
+}
+.pie:nth-of-type(8):after,
+.pie:nth-of-type(8):before,
+.other {
   background-color: #0bf;
 }
 /*
@@ -888,6 +906,20 @@ dd { float: left; width: 50%; }
   -webkit-transform: rotate(230deg);
        -o-transform: rotate(230deg);
           transform: rotate(230deg);
+}
+.pie[data-start="310"] {
+     -moz-transform: rotate(310deg);
+      -ms-transform: rotate(310deg);
+  -webkit-transform: rotate(310deg);
+       -o-transform: rotate(310deg);
+          transform: rotate(310deg);
+}
+.pie[data-start="320"] {
+     -moz-transform: rotate(320deg);
+      -ms-transform: rotate(320deg);
+  -webkit-transform: rotate(320deg);
+       -o-transform: rotate(320deg);
+          transform: rotate(320deg);
 }
 /*
   and rotate the amount of the pie that's showing.
@@ -936,6 +968,20 @@ dd { float: left; width: 50%; }
   -webkit-transform: rotate(130deg);
        -o-transform: rotate(130deg);
           transform: rotate(130deg);
+}
+.pie[data-start="310"] {
+     -moz-transform: rotate(310deg);
+      -ms-transform: rotate(310deg);
+  -webkit-transform: rotate(310deg);
+       -o-transform: rotate(310deg);
+          transform: rotate(310deg);
+}
+.pie[data-start="320"] {
+     -moz-transform: rotate(320deg);
+      -ms-transform: rotate(320deg);
+  -webkit-transform: rotate(320deg);
+       -o-transform: rotate(320deg);
+          transform: rotate(320deg);
 }
 /*
 NOTE: you could also apply custom classes (i.e. .s0 .v30)
