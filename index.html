@@ -13,8 +13,29 @@
 <div id="app"></div>
 <!-- built files will be auto injected -->
 <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','UA-39433012-1','auto');ga('send','pageview');
+    // Check if a new cache is available on page load.
+    window.addEventListener('load', function (e) {
+        window.applicationCache.addEventListener('updateready', function (e) {
+            if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+                // Browser downloaded a new app cache.
+                // Swap it in and reload the page to get the new hotness.
+                window.applicationCache.swapCache();
+                if (confirm('A new version of this site is available. Load it?')) {
+                    window.location.reload();
+                }
+            } else {
+                // Manifest didn't change. Nothing new to cache.
+            }
+        }, false);
+    }, false);
+</script>
+<script>
+    window.ga = function () {
+        ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-39433012-1', 'auto'); ga('send', 'pageview');
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
