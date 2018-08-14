@@ -52,7 +52,7 @@
                 this.chart.setOption({
                     tooltip: {
                         trigger: 'item',
-                        formatter: '{a} <br/>{b} years : {c} ({d}%)'
+                        formatter: '{a} <br/>{b} : {c} years ({d}%)'
                     },
                     legend: {
                         left: 'center',
