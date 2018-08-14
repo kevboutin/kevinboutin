@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2017-07-21:v1.3
+# 2018-08-14:v2.0
 
 # Explicitly cached 'master entries'.
 CACHE:
@@ -11,25 +11,22 @@ apple-touch-icon-57x57-precomposed.png
 apple-touch-icon-72x72-precomposed.png
 apple-touch-icon-precomposed.png
 index.html
-js/lte-ie7.js
-js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
-img/close-btn.png
-img/close-btn.svg
-img/gavetrainingmap.jpg
-img/html5-badge-h-css3-graphics-semantics-storage.png
-img/nav-icon.png
-img/nav-icon.svg
-img/nav-bar.png
-img/noise.png
-fonts/kbglyph.eot
-fonts/kbglyph.svg
-fonts/kbglyph.ttf
-fonts/kbglyph.woff
-fonts/apple_chancery-webfont.eot
-fonts/apple_chancery-webfont.svg
-fonts/apple_chancery-webfont.ttf
-fonts/apple_chancery-webfont.woff
-css/normalize.min.css
+assets/close-btn.png
+assets/close-btn.svg
+assets/gavetrainingmap.jpg
+assets/html5-badge-h-css3-graphics-semantics-storage.png
+assets/nav-icon.png
+assets/nav-icon.svg
+assets/nav-bar.png
+assets/noise.png
+assets/fonts/kbglyph.eot
+assets/fonts/kbglyph.svg
+assets/fonts/kbglyph.ttf
+assets/fonts/kbglyph.woff
+assets/fonts/apple_chancery-webfont.eot
+assets/fonts/apple_chancery-webfont.svg
+assets/fonts/apple_chancery-webfont.ttf
+assets/fonts/apple_chancery-webfont.woff
 #
 NETWORK:
 http://www.google-analytics.com/ga.js
