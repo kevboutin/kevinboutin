@@ -62,6 +62,20 @@
                     calculable: true,
                     series: [
                         {
+                            label: {
+                                normal: {
+                                    textStyle: {
+                                        color: 'rgba(0, 0, 0, 0.7)'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    lineStyle: {
+                                        color: 'rgba(0, 0, 0, 0.7)'
+                                    }
+                                }
+                            },
                             name: 'experience',
                             type: 'pie',
                             roseType: 'radius',
