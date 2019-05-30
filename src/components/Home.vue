@@ -80,9 +80,10 @@
                                 </div>
                                 <div class="timeline">
                                     <ul class="events">
-                                        <li style="width: 34%; left: 61%;">Angular, Polymer, Vue, Node, Serverless <em>(2015 - 2018)</em ></li>
+                                        <li style="width: 34%; left: 61%;">Angular, Polymer, Vue, Node, Serverless <em>(2015 - 2019)</em
+                                        ></li>
                                         <li style="width: 31.8%; left: 52%;">Spring <em>(2009 - 2017)</em></li>
-                                        <li style="width: 60.6%; left: 34.5%;">Java, JavaScript, MySQL <em>(2000 - 2018)</em></li>
+                                        <li style="width: 60.6%; left: 34.5%;">Java, JavaScript, MySQL <em>(2000 - 2019)</em></li>
                                         <li style="width: 17%; left: 34.5%;">PHP, Oracle <em>(2000 - 2005)</em></li>
                                         <li style="width: 16%; left: 9%;">C/C++ <em>(1995 - 1998)</em></li>
                                         <li style="width: 35%; left: 0;">RPG, COBOL, DB2 <em>(1993 - 1999)</em></li>
@@ -98,7 +99,7 @@
                                         <li>2015</li>
                                         <li>2016</li>
                                         <li>2017</li>
-                                        <li class="last">2018</li>
+                                        <li class="last">2019</li>
                                     </ul>
                                 </div>
                             </div>
@@ -108,7 +109,7 @@
                                 <h2>accomplishments</h2>
                                 <p class="company"><strong>Stanley Black & Decker</strong> -
                                     <em>March&nbsp;2016 - Current</em></p>
-                                <p class="jobtitle">Lead Software Developer - Atlanta - Salary</p>
+                                <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
                                 <p class="summary">Full stack developer using JavaScript on Node.js with serverless
                                     framework for the back-end RESTful web services with a strong emphasis on JavaScript
                                     Polymer/Vue.js front-ends. This includes heavy use of web sockets and is deployed
@@ -296,7 +297,8 @@
                 <div id="footer-container">
                     <footer class="clearfix">
                         <div class="wrapper">
-                            <p class="copy">&copy; 2018 Kevin Boutin <a rel="license" title="creative commons licensed work" target="_blank" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
+                            <p class="copy">&copy; 2019 Kevin Boutin <a rel="license"
+                                                                        title="creative commons licensed work" target="_blank" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
                             <ul>
                                 <li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me" target="_blank"><span aria-hidden="true" class="icon-google-plus"></span><span class="descrip">&nbsp;google+</span></a></li>
                                 <li><a href="//facebook.com/kevin.boutin" title="me on facebook" rel="me" target="_blank"><span aria-hidden="true" class="icon-facebook"></span><span class="descrip">&nbsp;facebook</span></a></li>
