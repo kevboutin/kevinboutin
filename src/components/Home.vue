@@ -29,7 +29,7 @@
                         <section id="about">
                             <div class="wrapper">
                                 <h2>about me</h2>
-                                <p>I possess over twenty-five years of strong software development experience in various
+                                <p>I possess over twenty-six years of strong software development experience in various
                                     industries. JavaScript, Java and web related environments are my specialty with
                                     familiarity in mobile application development. I am actively involved in the full
                                     project life cycle from user requirements to development, testing and implementation
@@ -108,7 +108,7 @@
                                 <h2>accomplishments</h2>
                                 <p class="company"><strong>Stanley Black & Decker</strong> -
                                     <em>March&nbsp;2016 - Current</em></p>
-                                <p class="jobtitle">Senior Software Developer - Atlanta - Salary</p>
+                                <p class="jobtitle">Lead Software Developer - Atlanta - Salary</p>
                                 <p class="summary">Full stack developer using JavaScript on Node.js with serverless
                                     framework for the back-end RESTful web services with a strong emphasis on JavaScript
                                     Polymer/Vue.js front-ends. This includes heavy use of web sockets and is deployed
@@ -116,7 +116,8 @@
                                 <ul class="accomp">
                                     <li>Worked on the DIYZ applications before being decommissioned. Over
                                         1 million downloads on iOS and Android platforms.</li>
-                                    <li>Currently working on Industry 4.0 solutions for several plants.</li>
+                                    <li>Currently working on Industry 4.0 solutions for several plants in Germany, UK
+                                        and USA.</li>
                                 </ul>
                                 <p class="company"><strong>Turner Broadcasting</strong> -
                                     <em>June&nbsp;2015 - February&nbsp;2016</em></p>
