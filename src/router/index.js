@@ -10,6 +10,16 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/recommends/auto',
+      name: 'Auto',
+      component: Auto
+    },
+    {
+      path: '/recommends/cooking',
+      name: 'Cooking',
+      component: Cooking
     }
   ]
 });
