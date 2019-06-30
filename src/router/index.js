@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
+import Auto from '@/components/Auto';
+import Cooking from '@/components/Cooking';
 
 Vue.use(Router);
 

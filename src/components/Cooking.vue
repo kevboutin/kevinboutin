@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="cooking">
         <div id="outer-wrap">
             <div id="inner-wrap">
                 <div id="header-container">
@@ -214,10 +214,10 @@
         margin: 0 auto;
         max-width: 60em;
     }
-    .home {
+    .cooking {
         padding: 0;
     }
-    .home article h1 {
+    .cooking article h1 {
         font-size: 2em;
     }
     #footer-container footer {
