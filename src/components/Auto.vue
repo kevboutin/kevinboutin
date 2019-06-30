@@ -161,15 +161,6 @@
         z-index: 200;
         font-size: 2.1em !important;
     }
-    .jobtitle {
-        font-size: 0.9em;
-        font-weight: bold;
-        margin: 0;
-    }
-    .company {
-        margin-bottom: 0;
-        margin-top: 2.5em;
-    }
     .roundimg {
         border-radius: 5px;
         -moz-border-radius: 5px;
@@ -185,10 +176,6 @@
         font-size: 0.8em !important;
         text-align: right;
         list-style-type: none;
-    }
-    ul.accomp {
-        margin: 0 0 5em 0;
-        padding-left: 1em;
     }
     #header-container,
     #footer-container {
@@ -206,17 +193,17 @@
         background: url('../assets/noise.png') #eee;
         padding: 0;
     }
-    #about {
+    #wheels {
         background: url('../assets/noise.png') #eee;
         padding: 4em 0;
     }
-    #competencies {
+    #paint {
         background: url('../assets/noise.png') #fff;
     }
-    #experience {
+    #trim {
         background: url('../assets/noise.png') #ddd;
     }
-    #accomplishments {
+    #interior {
         background: url('../assets/noise.png') #eee;
         padding: 0.5em 0 2.1em 0;
         margin-left: 0;
@@ -225,7 +212,6 @@
     header#top {
         margin-top: 0;
     }
-    .summary, .accomp { font-size: 0.9em; }
     .copy {
         font-size: .8em;
         float: left;
@@ -250,10 +236,6 @@
     .wrapper {
         width: 90%;
         margin: 0 5%;
-    }
-    .chart-wrapper {
-        padding: 16px 16px 0;
-        margin-bottom: 32px;
     }
 
     /* ==============
