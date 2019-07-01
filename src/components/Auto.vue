@@ -108,6 +108,7 @@
     body {
         font-size: 1em;
         line-height: 1.4;
+        background: url('../assets/noise.png');
     }
     ::-moz-selection {
         background: #b3d4fc;
@@ -116,9 +117,6 @@
     ::selection {
         background: #b3d4fc;
         text-shadow: none;
-    }
-    body {
-        background: url('../assets/noise.png');
     }
     img {
         vertical-align: middle;
