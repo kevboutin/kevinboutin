@@ -29,12 +29,14 @@
                         <section id="about">
                             <div class="wrapper">
                                 <h2>about me</h2>
-                                <p>I possess over twenty-six years of strong software development experience in various
-                                    industries. JavaScript, Java and web related environments are my specialty with
-                                    familiarity in mobile application development. I am actively involved in the full
-                                    project life cycle from user requirements to development, testing and implementation
-                                    as a full-stack software engineer. I am a self-learner, leader, great team player
-                                    and am quite capable of working independently.</p>
+                                <p>I possess over twenty-seven years of strong software development experience in
+                                    various industries. JavaScript, Java, Python and web related environments are my
+                                    specialty with a strong emphasis on cloud native serverless solutions in AWS,
+                                    Azure and Google Cloud. I am actively involved in the full
+                                    project life cycle from user requirements to architecture, concept, design,
+                                    development, testing and implementation as a full-stack software engineer. I am a
+                                    self-learner, leader, great team player and am quite capable of working
+                                    independently.</p>
                                 <p>It is important to note that this site not only serves as my resumé but as also a
                                     demonstration of my work. I am using Vue.js with HTML5 semantics, app cache, media
                                     queries for responsive layouts, border radius, box shadow, box reflection,
@@ -60,7 +62,7 @@
                                     <dd><span id="data-five">7/10</span></dd>
                                     <dt>Spring (aop, cache, di, jmx, orm, remoting)</dt>
                                     <dd><span id="data-six">9/10</span></dd>
-                                    <dt>Seam + JSF + Ajax4JSF</dt>
+                                    <dt>Python</dt>
                                     <dd><span id="data-seven">9/10</span></dd>
                                     <dt>SQL / PL/SQL</dt>
                                     <dd><span id="data-eight">8/10</span></dd>
@@ -107,8 +109,22 @@
                         <section id="accomplishments">
                             <div class="wrapper clearfix">
                                 <h2>accomplishments</h2>
+                                <p class="company"><strong>Dematic</strong> -
+                                    <em>September&nbsp;2019 - Current</em></p>
+                                <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
+                                <p class="summary">Full stack developer using JavaScript on Node.js with serverless
+                                    framework for the back-end RESTful web services with a strong emphasis on JavaScript
+                                    Vue.js front-ends. This includes heavy use of various cloud technologies with
+                                    muliple cloud providers. Some development in Python for OPC data extraction on
+                                    the edge.</p>
+                                <ul class="accomp">
+                                    <li>Reside on the global cloud architecture board for the company.</li>
+                                    <li>Solely built a cloud agnostic serverless solution for handling authentication
+                                        and authorization for use throughout the company.</li>
+                                    <li>Currently working on Dematic Insights, Optimize and Sprocket applications.</li>
+                                </ul>
                                 <p class="company"><strong>Stanley Black & Decker</strong> -
-                                    <em>March&nbsp;2016 - Current</em></p>
+                                    <em>March&nbsp;2016 - September&nbsp;2019</em></p>
                                 <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
                                 <p class="summary">Full stack developer using JavaScript on Node.js with serverless
                                     framework for the back-end RESTful web services with a strong emphasis on JavaScript
@@ -117,7 +133,7 @@
                                 <ul class="accomp">
                                     <li>Worked on the DIYZ applications before being decommissioned. Over
                                         1 million downloads on iOS and Android platforms.</li>
-                                    <li>Currently working on Industry 4.0 solutions for several plants in Germany, UK
+                                    <li>Worked on Industry 4.0 solutions for several plants in Germany, UK
                                         and USA.</li>
                                 </ul>
                                 <p class="company"><strong>Turner Broadcasting</strong> -
@@ -289,6 +305,8 @@
                                     <li>Real-time Web with Node.js - Atlanta 2016</li>
                                     <li>Building Block of Express.js - Atlanta 2016</li>
                                     <li>The Magical Marvels of MongoDB - Atlanta 2016</li>
+                                    <li>Azure Fundamentals - Grand Rapids 2019</li>
+                                    <li>Google Cloud Fundamentals - Atlanta 2020</li>
                                 </ul>
                             </div>
                         </section>
@@ -297,7 +315,7 @@
                 <div id="footer-container">
                     <footer class="clearfix">
                         <div class="wrapper">
-                            <p class="copy">&copy; 2019 Kevin Boutin <a rel="license"
+                            <p class="copy">&copy; 2020 Kevin Boutin <a rel="license"
                                                                         title="creative commons licensed work" target="_blank" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
                             <ul>
                                 <li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me" target="_blank"><span aria-hidden="true" class="icon-google-plus"></span><span class="descrip">&nbsp;google+</span></a></li>
