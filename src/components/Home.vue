@@ -63,7 +63,7 @@
                                     <dt>Spring (aop, cache, di, jmx, orm, remoting)</dt>
                                     <dd><span id="data-six">9/10</span></dd>
                                     <dt>Python</dt>
-                                    <dd><span id="data-seven">9/10</span></dd>
+                                    <dd><span id="data-seven">7/10</span></dd>
                                     <dt>SQL / PL/SQL</dt>
                                     <dd><span id="data-eight">8/10</span></dd>
                                     <dt>Photoshop + Illustrator</dt>
@@ -74,18 +74,20 @@
                         <section id="experience">
                             <div class="wrapper clearfix">
                                 <h2>experience</h2>
-                                <p>I have worked in seven different industries during my career. The time I spent in each industry
-                                    is detailed in the pie chart below. Below that, I illustrate how much time I have spent using
-                                    various skills.</p>
+                                <p>I have worked in seven different industries during my career. The time I spent in
+                                    each industry is detailed in the pie chart below. Below that, I illustrate how
+                                    much time I have spent using various skills.</p>
                                 <div class="chart-wrapper">
                                     <pie-chart></pie-chart>
                                 </div>
                                 <div class="timeline">
                                     <ul class="events">
-                                        <li style="width: 34%; left: 61%;">Angular, Polymer, Vue, Node, Serverless <em>(2015 - 2019)</em
+                                        <li style="width: 12%; left: 83%;">Python <em>(2019 - 2020)</em
+                                        ></li>
+                                        <li style="width: 34%; left: 61%;">Angular, Polymer, Vue, Node, Serverless <em>(2015 - 2020)</em
                                         ></li>
                                         <li style="width: 31.8%; left: 52%;">Spring <em>(2009 - 2017)</em></li>
-                                        <li style="width: 60.6%; left: 34.5%;">Java, JavaScript, MySQL <em>(2000 - 2019)</em></li>
+                                        <li style="width: 60.6%; left: 34.5%;">JavaScript, Java <em>(2000 - 2020)</em></li>
                                         <li style="width: 17%; left: 34.5%;">PHP, Oracle <em>(2000 - 2005)</em></li>
                                         <li style="width: 16%; left: 9%;">C/C++ <em>(1995 - 1998)</em></li>
                                         <li style="width: 35%; left: 0;">RPG, COBOL, DB2 <em>(1993 - 1999)</em></li>
@@ -101,7 +103,7 @@
                                         <li>2015</li>
                                         <li>2016</li>
                                         <li>2017</li>
-                                        <li class="last">2019</li>
+                                        <li class="last">2020</li>
                                     </ul>
                                 </div>
                             </div>
@@ -813,7 +815,7 @@
         -webkit-animation-name: bar-six;
     }
     #data-seven {
-        width: 90%;
+        width: 70%;
         -webkit-animation-name: bar-seven;
     }
     #data-eight {
