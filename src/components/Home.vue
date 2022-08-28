@@ -29,14 +29,11 @@
                         <section id="about">
                             <div class="wrapper">
                                 <h2>about me</h2>
-                                <p>I possess over twenty-seven years of strong software development experience in
+                                <p>I possess over twenty-nine years of strong software development experience in
                                     various industries. JavaScript, Java, Python and web related environments are my
                                     specialty with a strong emphasis on cloud native serverless solutions in AWS,
-                                    Azure and Google Cloud. I am actively involved in the full
-                                    project life cycle from user requirements to architecture, concept, design,
-                                    development, testing and implementation as a full-stack software engineer. I am a
-                                    self-learner, leader, great team player and am quite capable of working
-                                    independently.</p>
+                                    Azure and Google Cloud. I have been instrumental in architecting and building out
+                                    various modules and serverless systems in multiple cloud providers.</p>
                                 <p>It is important to note that this site not only serves as my resumé but as also a
                                     demonstration of my work. I am using Vue.js with HTML5 semantics, app cache, media
                                     queries for responsive layouts, border radius, box shadow, box reflection,
@@ -112,21 +109,33 @@
                             <div class="wrapper clearfix">
                                 <h2>accomplishments</h2>
                                 <p class="company"><strong>Dematic</strong> -
-                                    <em>September&nbsp;2019 - Current</em></p>
-                                <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
-                                <p class="summary">Full stack developer using JavaScript on Node.js with serverless
-                                    framework for the back-end RESTful web services with a strong emphasis on JavaScript
-                                    Vue.js front-ends. This includes heavy use of various cloud technologies with
-                                    muliple cloud providers. Some development in Python for OPC data extraction on
-                                    the edge.</p>
+                                    <em>August&nbsp;2019 - Current</em></p>
+                                <p class="jobtitle">Principal Architect - Atlanta - Salary</p>
+                                <p class="summary">Working on multiple applications across multiple cloud providers,
+                                    this role provided many opportunities to architect, design and develop serverless
+                                    solutions in Azure and GCP.</p>
                                 <ul class="accomp">
-                                    <li>Reside on the global cloud architecture board for the company.</li>
-                                    <li>Solely built a cloud agnostic serverless solution for handling authentication
-                                        and authorization for use throughout the company.</li>
-                                    <li>Currently working on Dematic Insights, Optimize and Sprocket applications.</li>
+                                    <li>Reside on the global architecture board for the company.</li>
+                                    <li>Solely built a cloud agnostic, multi-tenant serverless solution for handling
+                                        authentication and authorization for use throughout multiple applications
+                                        across the enterprise.
+                                        This used the serverless framework (Azure/AWS), cloud run (GCP) and provided
+                                        OAuth2 (local auth) and OpenID-Connect standards (SSO with various third party
+                                        identity providers).</li>
+                                    <li>Assisted in design, architecture, security,  and deployment of the WES
+                                        application in GCP.</li>
+                                    <li>Assisted in design, architecture, security, deployment and development of the
+                                        Control Tower application in Azure.</li>
+                                    <li>Designed the GCP architectures for the Control Tower application. This included
+                                        global, multi-regional, resilient IoT and cloud architectures.</li>
+                                    <li>Spearheaded and developed modules and environments in Terraform in both Azure
+                                        and GCP.</li>
+                                    <li>Developed a container module in Python to poll OPC-UA data on the IoT edge.</li>
+                                    <li>Presented various solutions and architectures for broad audiences as well as
+                                        technical deep dives on a variety of cloud subjects.</li>
                                 </ul>
                                 <p class="company"><strong>Stanley Black & Decker</strong> -
-                                    <em>March&nbsp;2016 - September&nbsp;2019</em></p>
+                                    <em>March&nbsp;2016 - August&nbsp;2019</em></p>
                                 <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
                                 <p class="summary">Full stack developer using JavaScript on Node.js with serverless
                                     framework for the back-end RESTful web services with a strong emphasis on JavaScript
@@ -272,44 +281,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <p class="summary smtxt"><strong>Professional training received:</strong></p>
-                                <ul class="accomp smtxt botpush">
-                                    <li>Learning Microsoft Visual C++ - Atlanta&nbsp;1995</li>
-                                    <li>IBM Visual Age C++ for OS/2 - Atlanta&nbsp;1995</li>
-                                    <li>IBM MQSeries Introduction – Sydney&nbsp;2000</li>
-                                    <li>IBM MQSeries System Administration – Sydney&nbsp;2000</li>
-                                    <li>IBM MQSeries Application Development – Sydney&nbsp;2000</li>
-                                    <li>Mercator Mapping Fundamentals – Sydney&nbsp;2000</li>
-                                    <li>Oracle SQL/SQL Plus – Sydney&nbsp;2001</li>
-                                    <li>Oracle PL/SQL – Sydney&nbsp;2001</li>
-                                    <li>Oracle Reports Developer – Sydney&nbsp;2001</li>
-                                    <li>Oracle Functional Foundations – Sydney&nbsp;2001</li>
-                                    <li>Oracle Workflow – Sydney&nbsp;2001</li>
-                                    <li>Sun Java Programming – Sydney&nbsp;2001</li>
-                                    <li>HP-Unix Fundamentals – Sydney&nbsp;2001</li>
-                                    <li>JBoss System Administration – Atlanta&nbsp;2009</li>
-                                    <li>Spring Fundamentals – Atlanta&nbsp;2010</li>
-                                    <li>HTML5 – Atlanta&nbsp;2011</li>
-                                    <li>Git Essentials - Atlanta&nbsp;2012</li>
-                                    <li>Up and Running with Backbone.js – Atlanta&nbsp;2014</li>
-                                    <li>Up and Running with AngularJS – Atlanta&nbsp;2015</li>
-                                    <li>Building a Data-Driven App with AngularJS – Atlanta&nbsp;2015</li>
-                                    <li>Shaping Up with AngularJS – Atlanta&nbsp;2015</li>
-                                    <li>Staying Sharp with AngularJS – Atlanta&nbsp;2015</li>
-                                    <li>Node.js Essential Training - Atlanta&nbsp;2015</li>
-                                    <li>JavaScript Road Trip – Atlanta&nbsp;2015</li>
-                                    <li>JavaScript Best Practices – Atlanta&nbsp;2015</li>
-                                    <li>Blasting Off with Bootstrap – Atlanta&nbsp;2015</li>
-                                    <li>Warming Up with Ember.js – Atlanta&nbsp;2015</li>
-                                    <li>Anatomy of Backbone.js – Atlanta&nbsp;2015</li>
-                                    <li>Anatomy of Backbone.js Part 2 – Atlanta&nbsp;2016</li>
-                                    <li>ES2015: The Shape of JavaScript to Come - Atlanta 2016</li>
-                                    <li>Real-time Web with Node.js - Atlanta 2016</li>
-                                    <li>Building Block of Express.js - Atlanta 2016</li>
-                                    <li>The Magical Marvels of MongoDB - Atlanta 2016</li>
-                                    <li>Azure Fundamentals - Grand Rapids 2019</li>
-                                    <li>Google Cloud Fundamentals - Atlanta 2020</li>
-                                </ul>
                             </div>
                         </section>
                     </article>
