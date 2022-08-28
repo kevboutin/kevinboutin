@@ -288,7 +288,7 @@
                 <div id="footer-container">
                     <footer class="clearfix">
                         <div class="wrapper">
-                            <p class="copy">&copy; 2020 Kevin Boutin <a rel="license"
+                            <p class="copy">&copy; 2022 Kevin Boutin <a rel="license"
                                                                         title="creative commons licensed work" target="_blank" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
                             <ul>
                                 <li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me" target="_blank"><span aria-hidden="true" class="icon-google-plus"></span><span class="descrip">&nbsp;google+</span></a></li>
