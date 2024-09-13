@@ -57,7 +57,7 @@
                     legend: {
                         left: 'center',
                         bottom: '10',
-                        data: ['Telecommunications', 'Beverages', 'Healthcare', 'Industry 4.0', 'Other']
+                        data: ['Telecommunications', 'Beverages', 'Healthcare', 'Industry 4.0', 'Distribution', 'Other']
                     },
                     calculable: true,
                     series: [
@@ -84,6 +84,7 @@
                             data: [
                                 {value: 9, name: 'Telecommunications'},
                                 {value: 8, name: 'Beverages'},
+                                {value: 7, name: 'Distribution'},
                                 {value: 2.5, name: 'Healthcare'},
                                 {value: 2, name: 'Industry 4.0'},
                                 {value: 3.5, name: 'Other'}

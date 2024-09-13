@@ -11,9 +11,11 @@
                             <div class="wrapper block">
                                 <ul>
                                     <li><a href="#about" title="about me" rel="section">about me</a></li><!--
-                                 --><li><a href="#competencies" title="competencies" rel="section">competencies</a></li><!--
-                                 --><li><a href="#experience" title="experience" rel="section">experience</a></li><!--
-                                 --><li><a href="#accomplishments" title="accomplishments" rel="section">accomplishments</a></li>
+                                 -->
+                                    <li><a href="#experience" title="experience" rel="section">experience</a></li><!--
+                                 -->
+                                    <li><a href="#accomplishments" title="accomplishments"
+                                            rel="section">accomplishments</a></li>
                                 </ul>
                                 <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
                             </div>
@@ -29,7 +31,7 @@
                         <section id="about">
                             <div class="wrapper">
                                 <h2>about me</h2>
-                                <p>I possess over twenty-nine years of strong software development experience in
+                                <p>I possess over thirty-one years of strong software development experience in
                                     various industries. JavaScript, Java, Python and web related environments are my
                                     specialty with a strong emphasis on cloud native serverless solutions in AWS,
                                     Azure and Google Cloud. I have been instrumental in architecting and building out
@@ -40,32 +42,6 @@
                                     animation, transitions, 3D transforms and gradients. Feel free to head over to my
                                     github page to view my development for this site. You can find a link along with
                                     several contact methods at the bottom of this page.</p>
-                            </div>
-                        </section>
-                        <section id="competencies">
-                            <div class="wrapper clearfix">
-                                <h2>competencies</h2>
-                                <p>&nbsp;</p>
-                                <dl id="chart" class="clearfix">
-                                    <dt>Java</dt>
-                                    <dd><span id="data-one">9/10</span></dd>
-                                    <dt>JavaScript</dt>
-                                    <dd><span id="data-two">9/10</span></dd>
-                                    <dt>Vue.js / Polymer</dt>
-                                    <dd><span id="data-three">7/10</span></dd>
-                                    <dt>Node.js / Serverless</dt>
-                                    <dd><span id="data-four">9/10</span></dd>
-                                    <dt>PHP</dt>
-                                    <dd><span id="data-five">7/10</span></dd>
-                                    <dt>Spring (aop, cache, di, jmx, orm, remoting)</dt>
-                                    <dd><span id="data-six">9/10</span></dd>
-                                    <dt>Python</dt>
-                                    <dd><span id="data-seven">7/10</span></dd>
-                                    <dt>SQL / PL/SQL</dt>
-                                    <dd><span id="data-eight">8/10</span></dd>
-                                    <dt>Photoshop + Illustrator</dt>
-                                    <dd><span id="data-nine">6/10</span></dd>
-                                </dl>
                             </div>
                         </section>
                         <section id="experience">
@@ -79,12 +55,14 @@
                                 </div>
                                 <div class="timeline">
                                     <ul class="events">
-                                        <li style="width: 12%; left: 83%;">Python <em>(2019 - 2020)</em
-                                        ></li>
-                                        <li style="width: 34%; left: 61%;">Angular, Polymer, Vue, Node, Serverless <em>(2015 - 2020)</em
-                                        ></li>
-                                        <li style="width: 31.8%; left: 52%;">Spring <em>(2009 - 2017)</em></li>
-                                        <li style="width: 60.6%; left: 34.5%;">JavaScript, Java <em>(2000 - 2020)</em></li>
+                                        <li style="width: 12%; left: 76%;">Python <em>(2019 - 2020)</em></li>
+                                        <li style="width: 34%; left: 61%;">Serverless <em>(2015 - 2024)</em>
+                                        </li>
+                                        <li style="width: 21.8%; left: 52%;">Spring <em>(2009 - 2017)</em></li>
+                                        <li style="width: 45.6%; left: 34.5%;">Java <em>(2000 - 2020)</em>
+                                        </li>
+                                        <li style="width: 60.6%; left: 34.5%;">JavaScript/Node.js <em>(2000 - 2024)</em>
+                                        </li>
                                         <li style="width: 17%; left: 34.5%;">PHP, Oracle <em>(2000 - 2005)</em></li>
                                         <li style="width: 16%; left: 9%;">C/C++ <em>(1995 - 1998)</em></li>
                                         <li style="width: 35%; left: 0;">RPG, COBOL, DB2 <em>(1993 - 1999)</em></li>
@@ -98,9 +76,9 @@
                                         <li>2005</li>
                                         <li>2009</li>
                                         <li>2015</li>
-                                        <li>2016</li>
                                         <li>2017</li>
-                                        <li class="last">2020</li>
+                                        <li>2020</li>
+                                        <li class="last">2024</li>
                                     </ul>
                                 </div>
                             </div>
@@ -108,8 +86,30 @@
                         <section id="accomplishments">
                             <div class="wrapper clearfix">
                                 <h2>accomplishments</h2>
+                                <p class="company"><strong>Locus Robotics</strong> -
+                                    <em>October&nbsp;2022 - Current</em>
+                                </p>
+                                <p class="jobtitle">Principal Architect - Remote - Salary</p>
+                                <p class="summary">Worked on a small team that built the LocusHub application from
+                                    scratch using serverless functions with Node.js on the Azure cloud. This role
+                                    provided many opportunities to architect, design and develop serverless solutions
+                                    in Azure.</p>
+                                <ul class="accomp">
+                                    <li>Reside on the global architecture board for the company.</li>
+                                    <li>Solely built a cloud agnostic, multi-tenant serverless solution for handling
+                                        authentication and authorization for LocusHub. This used OpenID-Connect for
+                                        SSO and also used MFA via TOTP.</li>
+                                    <li>Built and maintained several microservices for the LocusHub application to
+                                        handle notifications, analytics, permissions, user management, fine-grained
+                                        authorization and various other services.</li>
+                                    <li>Automated multi-regional deployments via CI/CD pipelines with API management
+                                        policy updates and configuration updates.</li>
+                                    <li>Implemented an extremely strict and successful content security policy for the
+                                        LocusHub application.</li>
+                                </ul>
                                 <p class="company"><strong>Dematic</strong> -
-                                    <em>August&nbsp;2019 - Current</em></p>
+                                    <em>August&nbsp;2019 - 2022</em>
+                                </p>
                                 <p class="jobtitle">Principal Architect - Atlanta - Salary</p>
                                 <p class="summary">Working on multiple applications across multiple cloud providers,
                                     this role provided many opportunities to architect, design and develop serverless
@@ -122,7 +122,7 @@
                                         This used the serverless framework (Azure/AWS), cloud run (GCP) and provided
                                         OAuth2 (local auth) and OpenID-Connect standards (SSO with various third party
                                         identity providers).</li>
-                                    <li>Assisted in design, architecture, security,  and deployment of the WES
+                                    <li>Assisted in design, architecture, security, and deployment of the WES
                                         application in GCP.</li>
                                     <li>Assisted in design, architecture, security, deployment and development of the
                                         Control Tower application in Azure.</li>
@@ -135,7 +135,8 @@
                                         technical deep dives on a variety of cloud subjects.</li>
                                 </ul>
                                 <p class="company"><strong>Stanley Black & Decker</strong> -
-                                    <em>March&nbsp;2016 - August&nbsp;2019</em></p>
+                                    <em>March&nbsp;2016 - August&nbsp;2019</em>
+                                </p>
                                 <p class="jobtitle">Lead Software Engineer - Atlanta - Salary</p>
                                 <p class="summary">Full stack developer using JavaScript on Node.js with serverless
                                     framework for the back-end RESTful web services with a strong emphasis on JavaScript
@@ -148,7 +149,8 @@
                                         and USA.</li>
                                 </ul>
                                 <p class="company"><strong>Turner Broadcasting</strong> -
-                                    <em>June&nbsp;2015 - February&nbsp;2016</em></p>
+                                    <em>June&nbsp;2015 - February&nbsp;2016</em>
+                                </p>
                                 <p class="jobtitle">Senior Software Developer - Atlanta - Contract</p>
                                 <p class="summary">Full stack developer using Scala and Java for back-end
                                     RESTful web services with a stronger emphasis on JavaScript front-ends.</p>
@@ -163,7 +165,7 @@
                                         MSEs with web front-ends.</li>
                                 </ul>
                                 <p class="company"><strong>Cox Communications</strong> - <em>June&nbsp;2006 -
-                                    June&nbsp;2015</em></p>
+                                        June&nbsp;2015</em></p>
                                 <p class="jobtitle">Senior Software Engineer - Atlanta - Salary</p>
                                 <p class="summary">Soley responsible for various applications (Internet Tools,
                                     Self Activation, Webmail, DHCP abstraction, and Unified Address Book), which
@@ -178,7 +180,8 @@
                                     <li>Redesigned and redeveloped the Internet Tools and Self Activation
                                         customer-facing applications to be server agnostic and to use more recent design
                                         patterns and frameworks.</li>
-                                    <li>Introduced Git, Spring, Seam, Ajax4JSF, EhCache, JMX and JSF to the department.</li>
+                                    <li>Introduced Git, Spring, Seam, Ajax4JSF, EhCache, JMX and JSF to the department.
+                                    </li>
                                     <li>Devised and established application monitoring standards. Designed and developed
                                         a DHCP abstraction system (web service) to ease IPv6 compliance.</li>
                                     <li>Designed three new systems for handling customer self activation of equipment
@@ -191,7 +194,8 @@
                                         In-Browser Notification application for use by residential data
                                         customers.</li>
                                 </ul>
-                                <p class="company"><strong>InSite Systems</strong> - <em>July&nbsp;2005 - June&nbsp;2006</em></p>
+                                <p class="company"><strong>InSite Systems</strong> - <em>July&nbsp;2005 -
+                                        June&nbsp;2006</em></p>
                                 <p class="jobtitle">Software Engineer - Atlanta - Salary</p>
                                 <ul class="accomp">
                                     <li>Developed a support site for clients.</li>
@@ -205,17 +209,25 @@
                                         real-time.</li>
                                     <li>Designed and developed a document management system.</li>
                                 </ul>
-                                <p class="company"><strong>Childrens Healthcare of Atlanta</strong> - <em>February&nbsp;2004 - July&nbsp;2005</em></p>
+                                <p class="company"><strong>Childrens Healthcare of Atlanta</strong> -
+                                    <em>February&nbsp;2004 - July&nbsp;2005</em>
+                                </p>
                                 <p class="jobtitle">I.T. Consultant - Atlanta - Contract</p>
-                                <p class="summary">Developed a web interface for tracking equipment movements. Assisted in large
-                                    software implementations across the organization. Supported software applications for clinical
+                                <p class="summary">Developed a web interface for tracking equipment movements. Assisted
+                                    in large
+                                    software implementations across the organization. Supported software applications
+                                    for clinical
                                     staff.</p>
-                                <p class="company"><strong>We Provide I.T.</strong> - <em>September&nbsp;2002 - January&nbsp;2004</em></p>
+                                <p class="company"><strong>We Provide I.T.</strong> - <em>September&nbsp;2002 -
+                                        January&nbsp;2004</em></p>
                                 <p class="jobtitle">Web Designer - Sydney/Atlanta - Self</p>
-                                <p class="summary">Designed and developed a suite of Java and PHP services to gather results from
-                                    Google search, manage content and communicate with other web sites. Designed and developed
+                                <p class="summary">Designed and developed a suite of Java and PHP services to gather
+                                    results from
+                                    Google search, manage content and communicate with other web sites. Designed and
+                                    developed
                                     entire web sites for clients.</p>
-                                <p class="company"><strong>Coca-Cola Amatil</strong> - <em>January&nbsp;1998 - July&nbsp;2002</em></p>
+                                <p class="company"><strong>Coca-Cola Amatil</strong> - <em>January&nbsp;1998 -
+                                        July&nbsp;2002</em></p>
                                 <p class="jobtitle">Senior Analyst Programmer - Sydney - Salary</p>
                                 <ul class="accomp">
                                     <li>Developed standards and templates for enterprise usage.</li>
@@ -238,28 +250,34 @@
                                         Korea, Indonesia, the Philippines and Australia.</li>
                                     <li>Assisted in designing, testing and developing a middleware architecture using
                                         Mercator and MQSeries.</li>
-                                    <li>Lead a development team in Korea to develop a B2B web application in Mercator.</li>
+                                    <li>Lead a development team in Korea to develop a B2B web application in Mercator.
+                                    </li>
                                 </ul>
-                                <p class="company"><strong>Kurt Salmon Associates</strong> - <em>January&nbsp;1997 - September&nbsp;1997</em></p>
+                                <p class="company"><strong>Kurt Salmon Associates</strong> - <em>January&nbsp;1997 -
+                                        September&nbsp;1997</em></p>
                                 <p class="jobtitle">Analyst Programmer - Atlanta - Salary</p>
                                 <p class="summary">Developed applications to assist in managing distribution center
                                     processes. Constructed a complex system to automatically determine the best shipping
                                     method based on size and weight of the packaging.</p>
-                                <p class="company"><strong>Equifax</strong> - <em>September&nbsp;1996 - January&nbsp;1997</em></p>
+                                <p class="company"><strong>Equifax</strong> - <em>September&nbsp;1996 -
+                                        January&nbsp;1997</em></p>
                                 <p class="jobtitle">Analyst Programmer - Atlanta - Contract</p>
                                 <p class="summary">Reconstructed Micro6X applications for year 2000 compliance, which
                                     included national credit files, motor vehicle reports, insurance claims, etc.</p>
-                                <p class="company"><strong>Genuine Parts Company</strong> - <em>January&nbsp;1996 - September&nbsp;1996</em></p>
+                                <p class="company"><strong>Genuine Parts Company</strong> - <em>January&nbsp;1996 -
+                                        September&nbsp;1996</em></p>
                                 <p class="jobtitle">Analyst Programmer - Atlanta - Contract</p>
                                 <p class="summary">Developed applications to be emulated on Telxon handheld units via
                                     wireless communications for bar code scanning and key input for multiple
                                     distribution centers selling NAPA auto parts. Developed cross-platform client-server
                                     communications as a standard for multiple applications.</p>
-                                <p class="company"><strong>The Coca-Cola Company</strong> - <em>July&nbsp;1994 - January&nbsp;1996</em></p>
+                                <p class="company"><strong>The Coca-Cola Company</strong> - <em>July&nbsp;1994 -
+                                        January&nbsp;1996</em></p>
                                 <p class="jobtitle">Analyst Programmer - Atlanta - Contract</p>
                                 <p class="summary">Developed client-server solutions on various platforms to assist in
                                     mobile communications and applications in delivery, field service and sales.</p>
-                                <p class="company"><strong>Mainheim Auctions</strong> - <em>May&nbsp;1993 - May&nbsp;1994</em></p>
+                                <p class="company"><strong>Mainheim Auctions</strong> - <em>May&nbsp;1993 -
+                                        May&nbsp;1994</em></p>
                                 <p class="jobtitle">Analyst Programmer - Atlanta - Salary</p>
                                 <p class="summary">Developed and supported various programs assisting in managing auto
                                     auction activities across the country.</p>
@@ -268,16 +286,16 @@
                                         sessions during my career.</p>
                                     <div class="roundimg">
                                         <img height="286" width="400" src="../assets/gavetrainingmap.jpg"
-                                             alt="Map showing places I gave training: Vienna, Atlanta, Owensboro, Seoul, Jakarta, Makati, Melbourne, Sydney and Shanghai"
-                                             title="Places I gave training: Vienna, Atlanta, Owensboro, Seoul, Jakarta, Makati, Melbourne, Sydney and Shanghai"/>
+                                            alt="Map showing places I gave training: Vienna, Atlanta, Owensboro, Seoul, Jakarta, Makati, Melbourne, Sydney and Shanghai"
+                                            title="Places I gave training: Vienna, Atlanta, Owensboro, Seoul, Jakarta, Makati, Melbourne, Sydney and Shanghai" />
                                     </div>
                                     <div class="techlogo">
                                         <a class="html5logo" href="//www.w3.org/html/logo/">
                                             <img class="html5logo"
-                                                 src="../assets/html5-badge-h-css3-graphics-semantics-storage.png"
-                                                 width="229" height="64"
-                                                 alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage"
-                                                 title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage"/>
+                                                src="../assets/html5-badge-h-css3-graphics-semantics-storage.png"
+                                                width="229" height="64"
+                                                alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage"
+                                                title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage" />
                                         </a>
                                     </div>
                                 </div>
@@ -288,16 +306,20 @@
                 <div id="footer-container">
                     <footer class="clearfix">
                         <div class="wrapper">
-                            <p class="copy">&copy; 2022 Kevin Boutin <a rel="license"
-                                                                        title="creative commons licensed work" target="_blank" href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true" class="icon-creativecommons"></span></a></p>
+                            <p class="copy">&copy; 2024 Kevin Boutin <a rel="license"
+                                    title="creative commons licensed work" target="_blank"
+                                    href="//creativecommons.org/licenses/by/3.0/deed.en_US"><span aria-hidden="true"
+                                        class="icon-creativecommons"></span></a></p>
                             <ul>
-                                <li><a href="//plus.google.com/100734934401965975191" title="me on google+" rel="me" target="_blank"><span aria-hidden="true" class="icon-google-plus"></span><span class="descrip">&nbsp;google+</span></a></li>
-                                <li><a href="//facebook.com/kevin.boutin" title="me on facebook" rel="me" target="_blank"><span aria-hidden="true" class="icon-facebook"></span><span class="descrip">&nbsp;facebook</span></a></li>
-                                <li><a href="//twitter.com/kevboutin" title="me on twitter" rel="me" target="_blank"><span aria-hidden="true" class="icon-twitter"></span><span class="descrip">&nbsp;twitter</span></a></li>
-                                <li><a href="//www.behance.net/kevboutin" title="me on behance" rel="me" target="_blank"><span aria-hidden="true" class="icon-behanced"></span><span class="descrip">&nbsp;behance</span></a></li>
-                                <li><a href="//linkedin.com/in/kevinboutin/" title="me on linkedin" rel="me" target="_blank"><span aria-hidden="true" class="icon-linkedin"></span><span class="descrip">&nbsp;linkedin</span></a></li>
-                                <li><a href="//github.com/kevboutin" title="fork me on github" rel="me" target="_blank"><span aria-hidden="true" class="icon-github"></span><span class="descrip">&nbsp;github</span></a></li>
-                                <li><a href="mailto:me@kevinboutin.me" title="me on email" rel="me" target="_blank"><span aria-hidden="true" class="icon-mail"></span><span class="descrip">&nbsp;email</span></a></li>
+                                <li><a href="//linkedin.com/in/kevinboutin/" title="me on linkedin" rel="me"
+                                        target="_blank"><span aria-hidden="true" class="icon-linkedin"></span><span
+                                            class="descrip">&nbsp;linkedin</span></a></li>
+                                <li><a href="//github.com/kevboutin" title="fork me on github" rel="me"
+                                        target="_blank"><span aria-hidden="true" class="icon-github"></span><span
+                                            class="descrip">&nbsp;github</span></a></li>
+                                <li><a href="mailto:me@kevinboutin.me" title="me on email" rel="me"
+                                        target="_blank"><span aria-hidden="true" class="icon-mail"></span><span
+                                            class="descrip">&nbsp;email</span></a></li>
                             </ul>
                         </div>
                     </footer>
