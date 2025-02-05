@@ -32,14 +32,14 @@ export default {
     data() {
         return {
             skills: [
-                {name: 'Python', period: '2019 - 2020', left: '76%', width: '12%'},
-                {name: 'Serverless', period: '2015 - 2024', left: '61%', width: '34%'},
-                {name: 'Spring', period: '2009 - 2017', left: '52%', width: '21.8%'},
-                {name: 'Java', period: '2000 - 2020', left: '34.5%', width: '45.6%'},
-                {name: 'JavaScript/Node.js', period: '2000 - 2024', left: '34.5%', width: '60.6%'},
-                {name: 'PHP, Oracle', period: '2000 - 2005', left: '34.5%', width: '17%'},
-                {name: 'C/C++', period: '1995 - 1998', left: '9%', width: '16%'},
-                {name: 'RPG, COBOL, DB2', period: '1993 - 1999', left: '0', width: '35%'}
+                { name: 'Python', period: '2019 - 2020', left: '76%', width: '12%' },
+                { name: 'Serverless', period: '2015 - 2025', left: '61%', width: '34%' },
+                { name: 'Spring', period: '2009 - 2017', left: '52%', width: '21.8%' },
+                { name: 'Java', period: '2000 - 2020', left: '34.5%', width: '45.6%' },
+                { name: 'JavaScript/Node.js', period: '2000 - 2025', left: '34.5%', width: '60.6%' },
+                { name: 'PHP, Oracle', period: '2000 - 2005', left: '34.5%', width: '17%' },
+                { name: 'C/C++', period: '1995 - 1998', left: '9%', width: '16%' },
+                { name: 'RPG, COBOL, DB2', period: '1993 - 1999', left: '0', width: '35%' }
             ]
         };
     }

@@ -129,13 +129,20 @@ export default {
                     company: 'Childrens Healthcare of Atlanta',
                     period: 'February 2004 - July 2005',
                     title: 'I.T. Consultant - Atlanta - Contract',
-                    summary: 'Developed a web interface for tracking equipment movements. Assisted in large software implementations across the organization. Supported software applications for clinical staff.'
+                    accomplishments: [
+                        'Developed a web interface for tracking equipment movements.',
+                        'Assisted in large software implementations across the organization.',
+                        'Supported software applications for clinical staff.'
+                    ]
                 },
                 {
                     company: 'We Provide I.T.',
                     period: 'September 2002 - January 2004',
                     title: 'Web Designer - Sydney/Atlanta - Self',
-                    summary: 'Designed and developed a suite of Java and PHP services to gather results from Google search, manage content and communicate with other web sites. Designed and developed entire web sites for clients.'
+                    accomplishments: [
+                        'Designed and developed a suite of Java and PHP services to gather results from Google search, manage content and communicate with other web sites.',
+                        'Designed and developed entire web sites for clients.'
+                    ]
                 },
                 {
                     company: 'Coca-Cola Amatil',
@@ -160,31 +167,42 @@ export default {
                     company: 'Kurt Salmon Associates',
                     period: 'January 1997 - September 1997',
                     title: 'Analyst Programmer - Atlanta - Salary',
-                    summary: 'Developed applications to assist in managing distribution center processes. Constructed a complex system to automatically determine the best shipping method based on size and weight of the packaging.'
+                    accomplishments: [
+                        'Developed applications to assist in managing distribution center processes.',
+                        'Constructed a complex system to automatically determine the best shipping method based on size and weight of the packaging.'
+                    ]
                 },
                 {
                     company: 'Equifax',
                     period: 'September 1996 - January 1997',
                     title: 'Analyst Programmer - Atlanta - Contract',
-                    summary: 'Reconstructed Micro6X applications for year 2000 compliance, which included national credit files, motor vehicle reports, insurance claims, etc.'
+                    accomplishments: [
+                        'Reconstructed Micro6X applications for year 2000 compliance, which included national credit files, motor vehicle reports, insurance claims, etc.'
+                    ]
                 },
                 {
                     company: 'Genuine Parts Company',
                     period: 'January 1996 - September 1996',
                     title: 'Analyst Programmer - Atlanta - Contract',
-                    summary: 'Developed applications to be emulated on Telxon handheld units via wireless communications for bar code scanning and key input for multiple distribution centers selling NAPA auto parts. Developed cross-platform client-server communications as a standard for multiple applications.'
+                    accomplishments: [
+                        'Developed applications to be emulated on Telxon handheld units via wireless communications for bar code scanning and key input for multiple distribution centers selling NAPA auto parts.', 'Developed cross-platform client-server communications as a standard for multiple applications.'
+                    ]
                 },
                 {
                     company: 'The Coca-Cola Company',
                     period: 'July 1994 - January 1996',
                     title: 'Analyst Programmer - Atlanta - Contract',
-                    summary: 'Developed client-server solutions on various platforms to assist in mobile communications and applications in delivery, field service and sales.'
+                    accomplishments: [
+                        'Developed client-server solutions on various platforms to assist in mobile communications and applications in delivery, field service and sales.'
+                    ]
                 },
                 {
                     company: 'Mainheim Auctions',
                     period: 'May 1993 - May 1994',
                     title: 'Analyst Programmer - Atlanta - Salary',
-                    summary: 'Developed and supported various programs assisting in managing auto auction activities across the country.'
+                    accomplishments: [
+                        'Developed and supported various programs assisting in managing auto auction activities across the US.'
+                    ]
                 }
             ]
         };
