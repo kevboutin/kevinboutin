@@ -5,14 +5,14 @@
 <script>
 // Import only what's needed from ECharts
 import * as echarts from 'echarts/core';
-import {PieChart} from 'echarts/charts';
+import { PieChart } from 'echarts/charts';
 import {
     TitleComponent,
     TooltipComponent,
     LegendComponent
 } from 'echarts/components';
-import {CanvasRenderer} from 'echarts/renderers';
-import {debounce} from '@/utils';
+import { CanvasRenderer } from 'echarts/renderers';
+import { debounce } from '../utils';
 
 // Register necessary components
 echarts.use([
