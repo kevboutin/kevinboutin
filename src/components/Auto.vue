@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import '../assets/styles/auto.css';
+import '../assets/auto.css';
 import AutoHeader from './layout/AutoHeader.vue';
 import AppFooter from './layout/AppFooter.vue';
 import WheelsSection from './sections/auto/WheelsSection.vue';
@@ -41,4 +41,4 @@ export default {
 };
 </script>
 
-<style src="../assets/styles/auto.css"></style>
+<style src="../assets/auto.css"></style>

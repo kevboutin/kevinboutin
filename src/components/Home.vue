@@ -49,4 +49,4 @@ export default {
 };
 </script>
 
-<style src="../assets/styles/home.css"></style>
+<style src="../assets/home.css"></style>

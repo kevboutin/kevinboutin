@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import '../assets/styles/cooking.css';
+import '../assets/cooking.css';
 import CookingHeader from './layout/CookingHeader.vue';
 import AppFooter from './layout/AppFooter.vue';
 import UtensilsSection from './sections/cooking/UtensilsSection.vue';
@@ -35,4 +35,4 @@ export default {
 };
 </script>
 
-<style src="../assets/styles/cooking.css"></style>
+<style src="../assets/cooking.css"></style>

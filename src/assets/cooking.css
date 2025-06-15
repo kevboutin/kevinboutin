@@ -1,0 +1,27 @@
+html {
+    color: #333;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: url('../noise.png');
+}
+
+/* Move all the existing styles here, removing duplicates that are already in shared styles */
+/* Remove IE-specific hacks and modernize CSS where possible */
+
+.cooking {
+    padding: 0;
+}
+
+#utensils {
+    background: url('../noise.png') #eee;
+    padding: 4em 0;
+}
+
+#equipment {
+    background: url('../noise.png') #fff;
+}
+
+/* Keep only cooking-specific styles and move shared styles to a common CSS file */
