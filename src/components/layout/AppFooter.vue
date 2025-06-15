@@ -1,6 +1,6 @@
 <template>
     <div id="footer-container">
-        <footer class="clearfix">
+        <footer>
             <div class="wrapper">
                 <p class="copy">&copy; 2025 Kevin Boutin
                     <a rel="license" title="creative commons licensed work" target="_blank"

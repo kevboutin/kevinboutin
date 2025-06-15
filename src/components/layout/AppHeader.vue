@@ -1,6 +1,6 @@
 <template>
     <div id="header-container">
-        <header id="top" role="banner" class="clearfix">
+        <header id="top" role="banner">
             <div class="block">
                 <a class="nav-btn" id="nav-open-btn" href="#nav">Navigation</a>
             </div>
@@ -10,6 +10,7 @@
                         <li><a href="#about" title="about me" rel="section">about me</a></li>
                         <li><a href="#experience" title="experience" rel="section">experience</a></li>
                         <li><a href="#accomplishments" title="accomplishments" rel="section">accomplishments</a></li>
+                        <li><a href="/about" title="about the site" rel="section">about the site</a></li>
                     </ul>
                     <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
                 </div>
