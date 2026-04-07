@@ -59,7 +59,7 @@ export default {
         }, 100);
         window.addEventListener('resize', this.__resizeHandler);
     },
-    beforeDestroy() {
+    beforeUnmount() {
         if (!this.chart) {
             return;
         }
